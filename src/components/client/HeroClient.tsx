@@ -35,9 +35,33 @@ interface HeroClientProps {
   stats: Stat[]
 }
 
+type Particle = {
+  id: number
+  left: string
+  top: string
+  duration: number
+  delay: number
+}
+
+const PARTICLE_COUNT = 15
+
+function generateParticles(): Particle[] {
+  return Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
+    id: i,
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
+    duration: 3 + Math.random() * 2,
+    delay: Math.random() * 2,
+  }))
+}
+
+
 export default function HeroClient({ images, stats }: HeroClientProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [mounted, setMounted] = useState(false)
+  const [particles, setParticles] = useState<Particle[]>([])
+
 
   const heroRef = useRef<HTMLDivElement>(null)
   const statsRef = useRef<HTMLDivElement>(null)
@@ -68,6 +92,11 @@ export default function HeroClient({ images, stats }: HeroClientProps) {
     return () => clearInterval(interval)
   }, [images.length])
 
+  useEffect(() => {
+  setMounted(true)
+  setParticles(generateParticles())
+}, [])
+
   // Mouse parallax effect
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -89,6 +118,7 @@ export default function HeroClient({ images, stats }: HeroClientProps) {
     nextSection?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  
   return (
     <>
       {/* Hero Section */}
@@ -128,29 +158,32 @@ export default function HeroClient({ images, stats }: HeroClientProps) {
           <Scene3D />
         </motion.div>
 
-        {/* Floating Particles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(15)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 bg-green-400/30 rounded-full"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                y: [0, -30, 0],
-                opacity: [0.2, 0.8, 0.2],
-                scale: [1, 1.5, 1],
-              }}
-              transition={{
-                duration: 3 + Math.random() * 2,
-                repeat: Infinity,
-                delay: Math.random() * 2,
-              }}
-            />
-          ))}
-        </div>
+        {mounted && (
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    {particles.map((p) => (
+      <motion.div
+        key={p.id}
+        className="absolute w-2 h-2 bg-green-400/30 rounded-full"
+        style={{
+          left: p.left,
+          top: p.top,
+        }}
+        animate={{
+          y: [0, -30, 0],
+          opacity: [0.2, 0.8, 0.2],
+          scale: [1, 1.5, 1],
+        }}
+        transition={{
+          duration: p.duration,
+          repeat: Infinity,
+          delay: p.delay,
+          ease: 'easeInOut',
+        }}
+      />
+    ))}
+  </div>
+)}
+
 
         {/* Hero Content with Parallax */}
         <motion.div 
