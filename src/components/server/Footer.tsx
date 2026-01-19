@@ -1,4 +1,4 @@
-import FooterClient from './client/FooterClient'
+import FooterClient from '../client/FooterClient'
 import Link from 'next/link'
 import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, Twitter } from 'lucide-react'
 

@@ -1,4 +1,4 @@
-import HeaderClient from './client/HeaderClient'
+import HeaderClient from '@/components/client/HeaderClient'
 
 export default function Header() {
   const navLinks = [

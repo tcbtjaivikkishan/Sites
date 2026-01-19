@@ -1,14 +1,13 @@
-import Hero from '@/components/Hero'
+import Hero from '@/components/server/hero'
+import Statistics from '@/components/server/Statistics'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects'
 import WhatshotIcon from '@mui/icons-material/Whatshot'
 import SpaIcon from '@mui/icons-material/Spa'
 import HealingIcon from '@mui/icons-material/Healing'
-import TimelineIcon from '@mui/icons-material/Timeline'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 
@@ -16,6 +15,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Statistics />
 
       {/* Panchmahabhut Section */}
       <section className="py-16 md:py-24 bg-white">
