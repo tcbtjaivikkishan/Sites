@@ -42,7 +42,7 @@ export default function Statistics() {
   return (
     <section
       id="stats-section"
-      className="relative py-16 md:py-24 bg-gradient-to-br from-green-50 via-emerald-50 to-green-100 overflow-hidden"
+      className="relative py-16 md:py-24 bg-linear-to-br from-green-50 via-emerald-50 to-green-100 overflow-hidden"
     >
       {/* Background Decorations */}
       <div className="absolute inset-0 opacity-20">

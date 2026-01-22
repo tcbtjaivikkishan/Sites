@@ -60,10 +60,10 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="hidden lg:block bg-gradient-to-r from-green-700 via-emerald-600 to-green-700 text-white text-sm relative overflow-hidden"
+            className="hidden lg:block bg-linear-to-r from-green-700 via-emerald-600 to-green-700 text-white text-sm relative overflow-hidden"
           >
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer" />
+              <div className="absolute inset-0 bg-linear-to-r from-transparent via-white to-transparent animate-shimmer" />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative z-10">
@@ -148,7 +148,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo - Responsive sizing */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
               <motion.div
                 whileHover={{ rotate: 360, scale: 1.15 }}
                 transition={{ duration: 0.6 }}
@@ -177,13 +177,13 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
 
               <div className="flex flex-col">
                 <motion.span
-                  className="text-xl sm:text-2xl font-black bg-gradient-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent"
+                  className="text-xl sm:text-2xl font-black bg-linear-to-r from-green-700 to-emerald-600 bg-clip-text text-transparent"
                   whileHover={{ scale: 1.05 }}
                 >
-                  TCBT
+                  TCBT जैविक किसान
                 </motion.span>
                 <span className="text-xs sm:text-sm text-gray-600 font-semibold -mt-0.5 sm:-mt-1">
-                  जैविक किसान
+                  ताराचंद बेलजी तकनीक
                 </span>
               </div>
             </Link>
@@ -279,7 +279,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 }}
               >
                 {/* Mobile Menu Contact Info */}
-                <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-4 space-y-2">
+                <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white p-4 space-y-2">
                   <a
                     href="tel:+919876543210"
                     className="flex items-center gap-2 hover:text-yellow-300 transition-colors"

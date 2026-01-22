@@ -129,7 +129,7 @@ function StatCard({
 
         {/* Shine Effect */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-2xl"
+          className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent rounded-2xl"
           initial={{ x: '-100%' }}
           animate={{ x: '100%' }}
           transition={{

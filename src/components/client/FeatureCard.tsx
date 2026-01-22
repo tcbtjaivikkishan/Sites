@@ -20,7 +20,7 @@ export default function FeatureCard({ feature, index }: { feature: Feature; inde
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group"
     >
-      <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 h-full shadow-md hover:shadow-2xl transition-all border border-green-100 group-hover:border-green-300">
+      <div className="bg-linear-to-br from-green-50 to-white rounded-2xl p-8 h-full shadow-md hover:shadow-2xl transition-all border border-green-100 group-hover:border-green-300">
         <div className="text-5xl mb-4">{feature.icon}</div>
         <h3 className="text-2xl font-bold text-gray-800 mb-3">{feature.title}</h3>
         <p className="text-gray-600 mb-3">{feature.description}</p>

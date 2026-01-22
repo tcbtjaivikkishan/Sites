@@ -19,7 +19,7 @@ export default function ElementCard({ element, index }: { element: Element; inde
       whileHover={{ scale: 1.05, y: -10 }}
       className="relative group"
     >
-      <div className={`bg-gradient-to-br ${element.color} rounded-2xl p-6 h-full shadow-lg hover:shadow-2xl transition-all`}>
+      <div className={`bg-linear-to-br ${element.color} rounded-2xl p-6 h-full shadow-lg hover:shadow-2xl transition-all`}>
         <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform">
           {element.icon}
         </div>

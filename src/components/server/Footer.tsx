@@ -1,193 +1,229 @@
-import FooterClient from '../client/FooterClient'
-import Link from 'next/link'
-import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, Twitter } from 'lucide-react'
+import FooterClient from '../client/FooterClient';
+import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, LinkedinIcon, TwitterIcon } from 'lucide-react';
+import Image from "next/image";
 
-export default function Footer() {
+const Footer = () => {
   const quickLinks = [
-    { name: 'होम', href: '/' },
-    { name: 'हमारे बारे में', href: '/about' },
-    { name: 'तकनीक', href: '/techniques' },
-    { name: 'उत्पाद', href: 'https://products.tcbtjaivikkisan.com' },
-    { name: 'गैलरी', href: '/gallery' },
-    { name: 'संपर्क', href: '/contact' },
-  ]
+    { "name": "Our Solutions", "href": "/solutions" },
 
-  const techniques = [
-    { name: 'ऊर्जा विज्ञान', href: '/urja-vigyan' },
-    { name: 'अग्निहोत्र', href: '/agnihotra' },
-    { name: 'वृक्षायुर्वेद कृषि', href: '/vrikshayurveda' },
-    { name: 'कृषि रोग उपचार', href: '/solutions' },
-    { name: 'पंचमहाभूत सिद्धांत', href: '/panchmahabhut' },
-  ]
+    { "name": "कृषि तैयारी", "href": "/solutions/krishi-taiyari" },
+    { "name": "चरणबद्ध प्रक्रिया", "href": "/solutions/charanbaddh-prakriya" },
+    { "name": "अग्निहोत्र", "href": "/solutions/agnihotra" },
 
-  const contactInfo = {
-    phone: '+91 98765 43210',
-    email: 'info@tcbtjaivikkisan.com',
-    address: 'प्राकृतिक खेती शोध संस्था, बालाघाट, मध्य प्रदेश, भारत',
-  }
+    { "name": "ऊर्जा विज्ञान", "href": "/solutions/urja-vigyan" },
+    { "name": "Formula", "href": "/solutions/formula" },
 
-  const socialLinks = [
-    { name: 'YouTube', href: 'https://www.youtube.com/@TarachandBelji', icon: Youtube },
-    { name: 'Facebook', href: 'https://facebook.com/tcbtjaivikkisan', icon: Facebook },
-    { name: 'Instagram', href: 'https://instagram.com/tcbtjaivikkisan', icon: Instagram },
-    { name: 'Twitter', href: 'https://twitter.com/tcbtjaivikkisan', icon: Twitter },
-  ]
+    { "name": "भूमि उपचार", "href": "/solutions/bhoomi-upchar" },
+    { "name": "पंचमहाभूत", "href": "/solutions/panchmahabhoot" }
+  ];
+
+  const resources = [
+    { "name": "About Us", "href": "/about-us" },
+    { "name": "Contact Us", "href": "/contact-us" },
+
+    { "name": "About Plants", "href": "/about-plants" },
+    { "name": "Tarachand Belji", "href": "/about-tarachand-belji" },
+    
+    { "name": "Success Stories", "href": "/success-stories" },
+    { "name": "TCBT Science", "href": "/tcbt-science" },
+    { "name": "TCBT Farming Methodology", "href": "/tcbt-farming-methodology" },
+    { "name": "Gallery & Field Impact", "href": "/gallery-field-impact" }
+  ];
 
   return (
-    <footer className="bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950 text-white relative overflow-hidden">
-      {/* Decorative Pattern */}
-      <div className="absolute inset-0 bg-pattern opacity-10" />
-      
+    <footer className="relative bg-gradient-to-b from-green-50/50 to-stone-100/30 overflow-hidden">
+      { }
+      <div className="absolute bottom-0 left-0 w-64 h-64 opacity-[0.03]">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <path d="M100,20 Q160,60 180,120 Q190,160 160,180 Q120,200 80,180 Q40,160 30,120 Q20,80 40,50 Q60,20 100,20 Z"
+            fill="currentColor" className="text-green-600" />
+        </svg>
+      </div>
+
       <div className="relative z-10">
-        {/* Main Footer Content */}
+        { }
         <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-            {/* Brand Section */}
-            <div className="space-y-6">
-              <Link href="/" className="flex items-center gap-3 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <Leaf className="w-7 h-7 text-white" />
+          { }
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+
+            { }
+            <div className="bg-linear-to-br from-green-600 via-green-700 to-emerald-700 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+              { }
+              <div className="absolute top-0 right-0 w-40 h-40 opacity-10">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
+                  backgroundSize: '20px 20px'
+                }} />
+              </div>
+
+              <div className="relative">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                    <Image
+                      src="/logo.png"
+                      alt="TCBT Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                    />                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold">TCBT Jaivik Kisan</h2>
+                    <p className="text-green-100 text-sm">ताराचंद बेलजी तकनीक</p>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-black text-white">TCBT</span>
-                  <span className="text-sm text-green-300 -mt-1">जैविक किसान</span>
-                </div>
-              </Link>
-              <p className="text-green-100 leading-relaxed text-sm">
-                प्रकृति के पंचमहाभूत सिद्धांत पर आधारित, रसायन-मुक्त कृषि विज्ञान। 
-                स्वस्थ मिट्टी, स्वस्थ फसल, स्वस्थ जीवन।
-              </p>
-              
-              {/* Social Links */}
-              <div className="flex gap-3">
-                {socialLinks.map((social) => {
-                  const Icon = social.icon
-                  return (
+
+                <p className="text-green-50 text-sm leading-relaxed mb-6">
+                  <span className="text-xl " > पंचमहाभूत कृषि
+                    मूल प्राकृतिक खेती </span><br />
+
+                  ऊर्जा विज्ञान एवं
+                  वृक्षायुर्वेद के सिद्ध प्रयोग
+                </p>
+
+                <div>
+                  <p className="text-green-200 text-xs font-semibold mb-3 uppercase tracking-wide">Connect With Us</p>
+                  <div className="flex gap-3">
                     <a
-                      key={social.name}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-white/10 hover:bg-green-500 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:scale-110 group"
-                      aria-label={social.name}
+                      href="#"
+                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="Facebook"
                     >
-                      <Icon className="w-5 h-5 text-green-300 group-hover:text-white transition-colors" />
+                      <Facebook className="w-5 h-5 text-white" />
                     </a>
-                  )
-                })}
+                    <a
+                      href="#"
+                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="YouTube"
+                    >
+                      <Youtube className="w-5 h-5 text-white" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="Instagram"
+                    >
+                      <Instagram className="w-5 h-5 text-white" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="LinkedIn"
+                    >
+                      <LinkedinIcon className="w-5 h-5 text-white" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                      aria-label="Twitter"
+                    >
+                      <TwitterIcon className="w-5 h-5 text-white" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-green-300">त्वरित लिंक</h3>
-              <ul className="space-y-3">
-                {quickLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-green-100 hover:text-yellow-300 transition-colors text-sm flex items-center gap-2 group"
-                    >
-                      <span className="w-1.5 h-1.5 bg-green-400 rounded-full group-hover:w-3 transition-all" />
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow mb-6">
+
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Leaf className="w-4 h-4 text-green-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-800">Quick Links</h3>
+                </div>
+
+                <ul className="grid grid-cols-2 gap-3">
+                  {quickLinks.map((link) => (
+                    <li key={link.name}>
+                      <a
+                        href={link.href}
+                        className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors group"
+                      >
+                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full group-hover:scale-150 transition-transform" />
+                        <span className="text-sm group-hover:translate-x-1 transition-transform">{link.name}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow lg:col-span-2">
+                <div className="flex items-center gap-2 mb-6">
+                  <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-4 h-4 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-800">Resources</h3>
+                </div>
+
+                <ul className="grid grid-cols-2 gap-3">
+                  {resources.map((resource) => (
+                    <li key={resource.name}>
+                      <a
+                        href={resource.href}
+                        className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors group"
+                      >
+                        <div className="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform" />
+                        <span className="text-sm group-hover:translate-x-1 transition-transform">{resource.name}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            {/* Techniques Links */}
-            <div>
-              <h3 className="text-lg font-bold mb-6 text-green-300">हमारी तकनीक</h3>
-              <ul className="space-y-3">
-                {techniques.map((technique) => (
-                  <li key={technique.name}>
-                    <Link
-                      href={technique.href}
-                      className="text-green-100 hover:text-yellow-300 transition-colors text-sm flex items-center gap-2 group"
-                    >
-                      <span className="w-1.5 h-1.5 bg-green-400 rounded-full group-hover:w-3 transition-all" />
-                      {technique.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-2 mb-6">
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-green-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">Contact Us</h3>
+              </div>
 
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-bold mb-6 text-green-300">संपर्क करें</h3>
-              <ul className="space-y-4">
-                <li>
-                  <a
-                    href={`tel:${contactInfo.phone}`}
-                    className="flex items-start gap-3 text-green-100 hover:text-yellow-300 transition-colors text-sm group"
-                  >
-                    <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                    <span>{contactInfo.phone}</span>
+              <div className="space-y-5">
+                <div>
+                  <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Phone / WhatsApp</p>
+                  <a href="tel:+919876543210" className="text-sm font-semibold text-gray-800 hover:text-green-600 transition-colors">
+                    +91 98765 43210
                   </a>
-                </li>
-                <li>
-                  <a
-                    href={`mailto:${contactInfo.email}`}
-                    className="flex items-start gap-3 text-green-100 hover:text-yellow-300 transition-colors text-sm group"
-                  >
-                    <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="break-all">{contactInfo.email}</span>
-                  </a>
-                </li>
-                <li className="flex items-start gap-3 text-green-100 text-sm">
-                  <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <span>{contactInfo.address}</span>
-                </li>
-              </ul>
+                  <p className="text-xs text-gray-500 mt-0.5">24 x 7 Available</p>
+                </div>
 
-              {/* Newsletter */}
-              <FooterClient />
+                <div>
+                  <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Email</p>
+                  <a href="mailto:info@tcbtjaivikkisan.com" className="text-sm font-semibold text-gray-800 hover:text-green-600 transition-colors break-all">
+                    info@tcbtjaivikkisan.com
+                  </a>
+                  <p className="text-xs text-gray-500 mt-0.5">Reply within 24 hours</p>
+                </div>
+
+                <div>
+                  <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Our Location</p>
+                  <p className="text-sm font-semibold text-gray-800">Village Kanai, Pt. Chandna Paraswada , Balaghat, MP 481566</p>
+                  <p className="text-xs text-gray-500 mt-0.5">training center</p>
+                </div>
+
+                <div>
+                  <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Head Office</p>
+                  <p className="text-sm font-semibold text-gray-800">Office No. 10, 3rd Floor, Mekalsuta Co-Working Space, Wright Town Stadium, Jabalpur, Madhya Pradesh – 482002</p>
+                  <p className="text-xs text-gray-500 mt-0.5">Mon-Sat, 10 AM - 8 PM</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Stats Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-t border-green-800/50">
-            <div className="text-center">
-              <div className="text-3xl font-black text-yellow-400 mb-1">2,00,000+</div>
-              <div className="text-xs text-green-300">प्रशिक्षित किसान</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-yellow-400 mb-1">150+</div>
-              <div className="text-xs text-green-300">वृक्षायुर्वेद फार्मूले</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-yellow-400 mb-1">20+</div>
-              <div className="text-xs text-green-300">वर्षों का अनुभव</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-yellow-400 mb-1">50+</div>
-              <div className="text-xs text-green-300">सफल उत्पाद</div>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="border-t border-green-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-green-200 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} TCBT जैविक किसान. सर्वाधिकार सुरक्षित।
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 flex items-center gap-2">
+              © 2026 TCBT Jaivik Kishan | Powered by Tarachand Belji Technique | All Rights Reserved
             </p>
-            <div className="flex gap-6 text-sm">
-              <Link href="/privacy" className="text-green-200 hover:text-yellow-300 transition-colors">
-                गोपनीयता नीति
-              </Link>
-              <Link href="/terms" className="text-green-200 hover:text-yellow-300 transition-colors">
-                नियम और शर्तें
-              </Link>
-              <Link href="/sitemap" className="text-green-200 hover:text-yellow-300 transition-colors">
-                साइटमैप
-              </Link>
-            </div>
           </div>
         </div>
-
-        {/* Back to Top Button - Will be in FooterClient */}
       </div>
+
+      <FooterClient />
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;

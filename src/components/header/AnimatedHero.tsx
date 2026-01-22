@@ -8,11 +8,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 
 const ThreeJsBackground = dynamic(
-  () => import('@/components/client/ThreeJsBackground'),
+  () => import('@/components/three/ThreeCanvas'),
   {
     ssr: false,
     loading: () => (
-      <div className="absolute inset-0 bg-gradient-to-br from-green-900/10 to-emerald-900/10" />
+      <div className="absolute inset-0 bg-linear-to-br from-green-900/10 to-emerald-900/10" />
     ),
   }
 )
@@ -44,7 +44,7 @@ export default function AnimatedHero({ images }: Props) {
   }
 
   return (
-    <div className="relative h-[600px] lg:h-screen overflow-hidden">
+    <div className="relative h-150 lg:h-screen overflow-hidden">
       {/* Background */}
       <motion.div className="absolute inset-0" style={{ scale }}>
         <AnimatePresence mode="wait">
@@ -59,8 +59,8 @@ export default function AnimatedHero({ images }: Props) {
               backgroundImage: `url(${images[current]})`,
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+            <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-black/20" />
           </motion.div>
         </AnimatePresence>
       </motion.div>
@@ -83,7 +83,7 @@ export default function AnimatedHero({ images }: Props) {
         >
           स्वागत है
           <br />
-          <span className="bg-gradient-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
             TCBT जैविक किसान
           </span>
         </motion.h1>

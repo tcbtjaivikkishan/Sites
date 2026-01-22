@@ -1,4 +1,4 @@
-import Hero from '@/components/server/hero'
+import Hero from '@/components/header/hero'
 import Statistics from '@/components/server/Statistics'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -9,7 +9,7 @@ import WhatshotIcon from '@mui/icons-material/Whatshot'
 import SpaIcon from '@mui/icons-material/Spa'
 import HealingIcon from '@mui/icons-material/Healing'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
+import Testimonials from '@/components/testimonials/Testimonials'
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Statistics />
 
-      {/* Panchmahabhut Section */}
+      { }
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-12">
           <div className="text-center mb-12">
@@ -30,7 +30,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Panchmahabhut Cards */}
+          { }
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
               { icon: '🌍', title: 'भूमि – माता', desc: 'बीज को उगाती है, पोषण देती है', color: 'from-amber-500 to-yellow-600' },
@@ -41,7 +41,7 @@ export default function Home() {
             ].map((item, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-green-400">
                 <CardHeader>
-                  <div className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform`}>
+                  <div className={`w-16 h-16 mx-auto rounded-full bg-linear-to-br ${item.color} flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform`}>
                     {item.icon}
                   </div>
                   <CardTitle className="text-center text-lg">{item.title}</CardTitle>
@@ -55,8 +55,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Techniques Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-green-50 to-emerald-50">
+      { }
+      <section className="py-16 md:py-24 bg-linear-to-br from-green-50 to-emerald-50">
         <div className="max-w-7xl mx-auto px-4 md:px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Steps */}
+      { }
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-12">
           <div className="text-center mb-12">
@@ -161,7 +161,7 @@ export default function Home() {
               },
             ].map((item, index) => (
               <div key={index} className="relative">
-                <div className="bg-gradient-to-br from-green-600 to-emerald-600 text-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="bg-linear-to-br from-green-600 to-emerald-600 text-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                   <div className="text-6xl font-black opacity-20 mb-4">
                     चरण {item.step}
                   </div>
@@ -179,82 +179,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-green-50 to-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 md:px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              🗣️ हमारे किसान क्या कहते हैं
-            </h2>
-            <p className="text-lg text-gray-600">सफल किसानों की सच्ची कहानियां</p>
-          </div>
-
-          <Card className="max-w-4xl mx-auto border-2 border-green-200 shadow-2xl">
-            <CardHeader>
-              <div className="flex items-start gap-4">
-                <FormatQuoteIcon className="text-green-600 w-12 h-12" />
-                <div>
-                  <CardTitle className="text-2xl mb-2">
-                    💰 8 माह की अवधि में प्रति एकड़ 23 टन अदरक का उत्पादन
-                  </CardTitle>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-lg text-gray-700 mb-6 italic">
-                "TCBT की जैविक तकनीक से मेरी अदरक की फसल में अद्भुत वृद्धि हुई। रासायनिक खाद के बिना भी उत्पादन दोगुना हो गया!"
-              </p>
-              <div className="flex items-center gap-3 text-green-700 font-semibold">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-600 to-emerald-600 flex items-center justify-center text-white text-xl">
-                  B
-                </div>
-                <div>
-                  <p className="font-bold">– श्री बाला साहेब माने</p>
-                  <p className="text-sm text-gray-600">कृष्णगाँव, तह. गोरेगांव जिला सतारा, महाराष्ट्र</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="text-center mt-8">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
-              <Link href="/testimonials">
-                View All Success Stories
-                <ArrowForwardIcon className="ml-2" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Stats */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-green-700 to-emerald-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 md:px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              जैविक खेती का प्रभाव और सफलता
-            </h2>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto">
-              ताराचंद बेलजी ने 2009 में प्राकृतिक खेती शोध संस्था बालाघाट की स्थापना की और किसानों के साथ मिलकर जैविक/प्राकृतिक खेती के मूलभूत सिद्धांतों को खोज निकाला तथा वृक्षायुर्वेद के 150 सूक्तों (फार्मूलो) को सिद्ध किए।
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { value: '150+', label: 'सूक्त/फार्मूला', desc: 'वृक्षायुर्वेद आधारित' },
-              { value: '2009', label: 'स्थापना वर्ष', desc: 'शोध संस्था' },
-              { value: '2+', label: 'लाखों', desc: 'लाभान्वित किसान' },
-              { value: '100%', label: 'ऑर्गेनिक', desc: 'रसायन-मुक्त खेती' },
-            ].map((stat, index) => (
-              <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
-                <div className="text-5xl font-black mb-2">{stat.value}</div>
-                <div className="text-xl font-bold mb-1">{stat.label}</div>
-                <div className="text-white/80 text-sm">{stat.desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimonials />
     </main>
   )
 }
