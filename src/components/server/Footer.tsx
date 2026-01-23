@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-b from-green-50/50 to-stone-100/30 overflow-hidden">
+    <footer className="relative bg-linear-to-b from-green-100 to-stone-100/30 overflow-hidden">
       { }
       <div className="absolute bottom-0 left-0 w-64 h-64 opacity-[0.03]">
         <svg viewBox="0 0 200 200" className="w-full h-full">
