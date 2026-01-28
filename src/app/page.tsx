@@ -11,7 +11,9 @@ import HealingIcon from '@mui/icons-material/Healing'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Testimonials from '@/components/testimonials/Testimonials'
 
-export default function Home() {
+export default async function Home() {
+  await new Promise(resolve => setTimeout(resolve, 3000));
+
   return (
     <main>
       <Hero />
