@@ -1,4 +1,4 @@
-import AnimatedStats from '@/components/client/AnimatedStats'
+import AnimatedStats from '../client/AnimatedStats'
 import PeopleIcon from '@mui/icons-material/People'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import VerifiedIcon from '@mui/icons-material/Verified'

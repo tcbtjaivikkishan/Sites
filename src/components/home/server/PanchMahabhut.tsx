@@ -1,4 +1,4 @@
-import ElementCard from './client/ElementCard'
+import ElementCard from '../client/ElementCard'
 
 export default function PanchMahabhut() {
   const elements = [

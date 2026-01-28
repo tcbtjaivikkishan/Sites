@@ -1,4 +1,4 @@
-import FooterClient from '../client/FooterClient';
+import FooterClient from './FooterClient';
 import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, LinkedinIcon, TwitterIcon } from 'lucide-react';
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ const Footer = () => {
     { "name": "About Us", "href": "/about-us" },
     { "name": "Contact Us", "href": "/contact-us" },
 
-    { "name": "About Plants", "href": "/about-plants" },
+    { "name": "About Plants", "href": "/vrikshayurveda" },
     { "name": "Tarachand Belji", "href": "/about-tarachand-belji" },
     
     { "name": "Success Stories", "href": "/success-stories" },

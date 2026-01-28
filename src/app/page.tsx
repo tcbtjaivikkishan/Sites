@@ -1,5 +1,5 @@
 import Hero from '@/components/header/hero'
-import Statistics from '@/components/server/Statistics'
+import Statistics from '@/components/home/server/Statistics'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
