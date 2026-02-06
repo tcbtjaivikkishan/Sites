@@ -6,15 +6,15 @@ const Footer = () => {
   const quickLinks = [
     { "name": "Our Solutions", "href": "/solutions" },
 
-    { "name": "कृषि तैयारी", "href": "/solutions/krishi-taiyari" },
-    { "name": "चरणबद्ध प्रक्रिया", "href": "/solutions/charanbaddh-prakriya" },
-    { "name": "अग्निहोत्र", "href": "/solutions/agnihotra" },
+    { "name": "कृषि तैयारी", "href": "/krishi-taiyari" },
+    { "name": "चरणबद्ध प्रक्रिया", "href": "/charanbaddh-prakriya" },
+    { "name": "अग्निहोत्र", "href": "/agnihotra" },
 
-    { "name": "ऊर्जा विज्ञान", "href": "/solutions/urja-vigyan" },
-    { "name": "Formula", "href": "/solutions/formula" },
+    { "name": "ऊर्जा विज्ञान", "href": "/urja-vigyan" },
+    { "name": "Formula", "href": "/formula" },
 
-    { "name": "भूमि उपचार", "href": "/solutions/bhoomi-upchar" },
-    { "name": "पंचमहाभूत", "href": "/solutions/panchmahabhoot" }
+    { "name": "भूमि उपचार", "href": "/bhoomi-upchar" },
+    { "name": "पंचमहाभूत", "href": "/panchmahabhoot" }
   ];
 
   const resources = [

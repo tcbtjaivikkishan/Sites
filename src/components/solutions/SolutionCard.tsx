@@ -68,8 +68,7 @@ export default function SolutionCard({ solution }: SolutionCardProps) {
           <div className="relative h-64 sm:h-80 rounded-xl overflow-hidden border border-stone-200">
             <Image
               src={
-                solution.image ||
-                'https://www.tcbtjaivikkisan.com/files/Gallary/soutions/Screenshot%202025-12-06%20225750.png'
+                solution.image || ''
               }
               alt={solution.title}
               fill

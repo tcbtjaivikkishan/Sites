@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
 import uiReducer from "./slices/uiSlice";
+import storiesReducer from "./slices/storiesSlice"
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       ui: uiReducer,
+      stories: storiesReducer,
     },
     devTools: process.env.NODE_ENV !== "production",
   });

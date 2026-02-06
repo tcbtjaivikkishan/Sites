@@ -487,3 +487,21 @@ html {
 .animate-fadeIn {
   animation: fadeIn 1s ease-out forwards;
 }
+
+@layer base {
+  html {
+    font-family: var(--font-devanagari), var(--font-inter), system-ui, sans-serif;
+  }
+
+  p,
+  li {
+    line-height: 1.7; /* Prevents matra clipping */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.3;
+  }
+}

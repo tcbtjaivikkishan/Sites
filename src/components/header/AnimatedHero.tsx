@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import YouTubeIcon from '@mui/icons-material/YouTube'
+import { ArrowRight, YoutubeIcon } from 'lucide-react'
 
 const ThreeJsBackground = dynamic(
   () => import('@/components/three/ThreeCanvas'),
@@ -101,7 +100,7 @@ export default function AnimatedHero({ images }: Props) {
             className="bg-green-600 hover:bg-green-700 rounded-full px-8 py-6 text-lg font-bold"
           >
             अभी शुरू करें
-            <ArrowForwardIcon className="ml-2" />
+            <ArrowRight className="ml-2" />
           </Button>
 
           <Button
@@ -115,7 +114,7 @@ export default function AnimatedHero({ images }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <YouTubeIcon className="mr-2" />
+              <YoutubeIcon className="mr-2" />
               YouTube देखें
             </a>
           </Button>
