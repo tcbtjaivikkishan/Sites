@@ -4,11 +4,6 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ReduxProvider from "../store/ReduxProvider";
-import ChatbotWidget from "@/components/chatbot/ChatbotWidget";
-
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { ThemeProvider, CssBaseline } from "@mui/material";
-import theme from "@/lib/theme";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,20 +29,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hi" className="scroll-smooth">
-      <body className={`${inter.variable} ${devanagari.variable}`}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-
-            <ReduxProvider>
-              <Header />
-              {children}
-              <Footer />
-              <ChatbotWidget />
-            </ReduxProvider>
-
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+      <body
+        className={`${inter.variable} ${devanagari.variable}`}
+      >
+        <Header />
+        <ReduxProvider>{children}</ReduxProvider>
+        <Footer />
       </body>
     </html>
   );
