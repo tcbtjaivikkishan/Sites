@@ -1,4 +1,3 @@
-import FooterClient from './FooterClient';
 import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, LinkedinIcon, TwitterIcon } from 'lucide-react';
 import Image from "next/image";
 
@@ -23,7 +22,7 @@ const Footer = () => {
 
     { "name": "About Plants", "href": "/vrikshayurveda" },
     { "name": "Tarachand Belji", "href": "/about-tarachand-belji" },
-    
+
     { "name": "Success Stories", "href": "/success-stories" },
     { "name": "TCBT Science", "href": "/tcbt-science" },
     { "name": "TCBT Farming Methodology", "href": "/tcbt-farming-methodology" },
@@ -220,8 +219,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <FooterClient />
     </footer>
   );
 };

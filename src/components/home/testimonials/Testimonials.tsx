@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Star, TrendingUp, Users } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Users } from 'lucide-react';
 
 const testimonials = [
   {
@@ -65,10 +65,6 @@ export default function Testimonials() {
       <div className="relative max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            <Users size={16} />
-            <span>1000+ संतुष्ट किसान</span>
-          </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-lime-600 bg-clip-text text-transparent">
               हमारे किसान
@@ -98,9 +94,6 @@ export default function Testimonials() {
                       alt={current.author}
                       className="w-48 h-48 rounded-full object-cover border-8 border-white shadow-xl ring-4 ring-green-100 transform transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full p-3 shadow-lg">
-                      <TrendingUp className="text-white" size={24} />
-                    </div>
                   </div>
                 </div>
 
