@@ -52,7 +52,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
 
   return (
     <>
-      {/* Top Bar - Contact Info - Desktop Only */}
+      { }
       <AnimatePresence>
         {!isScrolled && (
           <motion.div
@@ -132,7 +132,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
         )}
       </AnimatePresence>
 
-      {/* Main Header */}
+      { }
       <motion.header
         style={{
           backgroundColor: useTransform(
@@ -141,39 +141,22 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
             ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.95)"]
           ),
         }}
-        className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${
-          isScrolled ? "shadow-lg border-b border-green-100" : ""
-        }`}
+        className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${isScrolled ? "shadow-lg border-b border-green-100" : ""
+          }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Logo - Responsive sizing */}
+            { }
             <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
-              <motion.div
-                whileHover={{ rotate: 360, scale: 1.15 }}
-                transition={{ duration: 0.6 }}
-                className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-green-500/50 rounded-full"
-              >
-                <Image
+              < div
+                className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-green-500/50"
+              ><Image
                   src="/logo.png"
                   alt="TCBT Logo"
                   fill
                   className="object-contain"
                   priority
-                />
-
-                <motion.div
-                  className="absolute inset-0 rounded-full border-2 border-green-500"
-                  animate={{
-                    scale: [1, 1.3, 1],
-                    opacity: [0.5, 0, 0.5],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                  }}
-                />
-              </motion.div>
+                /></div>
 
               <div className="flex flex-col">
                 <motion.span
@@ -188,7 +171,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
+            { }
             <div className="hidden lg:flex items-center gap-1">
               {navLinks.map((link, index) => (
                 <motion.div
@@ -207,9 +190,9 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
               ))}
             </div>
 
-            {/* Mobile: Quick Actions + Menu Button */}
+            { }
             <div className="flex items-center gap-2 lg:hidden">
-              {/* Quick WhatsApp Button - Mobile */}
+              { }
               <motion.a
                 href="https://wa.me/919876543210"
                 target="_blank"
@@ -221,7 +204,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 <WhatsAppIcon className="w-5 h-5 text-green-600" />
               </motion.a>
 
-              {/* Mobile Menu Button */}
+              { }
               <motion.button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="p-2 rounded-xl hover:bg-green-50 transition-colors"
@@ -254,7 +237,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
           </div>
         </nav>
 
-        {/* Mobile Menu - Fixed positioning */}
+        { }
         <AnimatePresence>
           {isMobileMenuOpen && (
             <>
@@ -264,7 +247,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 exit={{ opacity: 0 }}
                 className="fixed inset-0 bg-black/50 backdrop-blur-sm lg:hidden z-40"
                 onClick={() => setIsMobileMenuOpen(false)}
-                style={{ top: "64px" }} // Fixed height
+                style={{ top: "64px" }}
               />
 
               <motion.div
@@ -273,12 +256,12 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 exit={{ x: "100%" }}
                 transition={{ type: "spring", damping: 25, stiffness: 200 }}
                 className="fixed right-0 w-full sm:w-80 bg-white shadow-2xl lg:hidden overflow-y-auto z-50"
-                style={{ 
-                  top: "64px", // Fixed height
+                style={{
+                  top: "64px",
                   height: "calc(100vh - 64px)"
                 }}
               >
-                {/* Mobile Menu Contact Info */}
+                { }
                 <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white p-4 space-y-2">
                   <a
                     href="tel:+919876543210"
@@ -296,7 +279,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                   </a>
                 </div>
 
-                {/* Navigation Links */}
+                { }
                 <div className="p-4 space-y-2">
                   {navLinks.map((link, index) => (
                     <motion.div
@@ -315,7 +298,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                   ))}
                 </div>
 
-                {/* Mobile Footer Actions */}
+                { }
                 <div className="border-t border-gray-200 p-4 space-y-3">
                   <a
                     href="https://www.youtube.com/@TarachandBelji"
@@ -357,7 +340,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
   );
 }
 
-// Desktop Nav Item Component (unchanged)
+
 function NavItem({ link, pathname, activeDropdown, setActiveDropdown }: any) {
   const isActive = pathname === link.href;
   const hasDropdown = link.dropdown && link.dropdown.length > 0;
@@ -385,11 +368,10 @@ function NavItem({ link, pathname, activeDropdown, setActiveDropdown }: any) {
         onMouseLeave={() => setActiveDropdown(null)}
       >
         <button
-          className={`px-4 py-2 font-semibold transition-all rounded-xl hover:bg-green-50 flex items-center gap-1 ${
-            isActive
+          className={`px-4 py-2 font-semibold transition-all rounded-xl hover:bg-green-50 flex items-center gap-1 ${isActive
               ? "text-green-700 bg-green-50"
               : "text-gray-700 hover:text-green-700"
-          }`}
+            }`}
         >
           {link.name}
           <motion.div
@@ -426,18 +408,17 @@ function NavItem({ link, pathname, activeDropdown, setActiveDropdown }: any) {
   return (
     <Link
       href={link.href}
-      className={`px-4 py-2 font-semibold transition-all rounded-xl hover:bg-green-50 ${
-        isActive
+      className={`px-4 py-2 font-semibold transition-all rounded-xl hover:bg-green-50 ${isActive
           ? "text-green-700 bg-green-50"
           : "text-gray-700 hover:text-green-700"
-      }`}
+        }`}
     >
       {link.name}
     </Link>
   );
 }
 
-// Mobile Nav Item Component (unchanged)
+
 function MobileNavItem({
   link,
   pathname,
@@ -468,11 +449,10 @@ function MobileNavItem({
           onClick={() =>
             setActiveDropdown(activeDropdown === link.name ? null : link.name)
           }
-          className={`w-full flex items-center justify-between px-4 py-3 font-semibold rounded-xl transition-all ${
-            isActive
+          className={`w-full flex items-center justify-between px-4 py-3 font-semibold rounded-xl transition-all ${isActive
               ? "text-green-700 bg-green-50"
               : "text-gray-700 hover:bg-green-50 hover:text-green-700"
-          }`}
+            }`}
         >
           {link.name}
           <motion.div
@@ -509,11 +489,10 @@ function MobileNavItem({
   return (
     <Link
       href={link.href}
-      className={`block px-4 py-3 font-semibold rounded-xl transition-all ${
-        isActive
+      className={`block px-4 py-3 font-semibold rounded-xl transition-all ${isActive
           ? "text-green-700 bg-green-50"
           : "text-gray-700 hover:bg-green-50 hover:text-green-700"
-      }`}
+        }`}
     >
       {link.name}
     </Link>
