@@ -2,7 +2,7 @@ import NutrientSection from "@/components/vrikshayurveda/NutrientSection";
 import dynamic from "next/dynamic";
 
 const FloatingLeaves = dynamic(
-  () => import("@/components/three/objects/FloatingLeaves.tsx "),
+  () => import("@/components/three/objects/FloatingLeaves"),
 );
 
 export const metadata = {

@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, YoutubeIcon } from 'lucide-react'
+import Link from 'next/link'
 
 const ThreeJsBackground = dynamic(
   () => import('@/components/three/ThreeCanvas'),
@@ -27,7 +28,7 @@ export default function AnimatedHero({ images }: Props) {
   const scale = useTransform(scrollY, [0, 300], [1, 1.1])
   const opacity = useTransform(scrollY, [0, 300], [1, 0])
 
-  // slideshow
+
   useEffect(() => {
     const id = setInterval(() => {
       setCurrent((i) => (i + 1) % images.length)
@@ -44,7 +45,7 @@ export default function AnimatedHero({ images }: Props) {
 
   return (
     <div className="relative h-150 lg:h-screen overflow-hidden">
-      {/* Background */}
+      { }
       <motion.div className="absolute inset-0" style={{ scale }}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -64,12 +65,12 @@ export default function AnimatedHero({ images }: Props) {
         </AnimatePresence>
       </motion.div>
 
-      {/* 3D background */}
+      { }
       <div className="hidden lg:block absolute inset-0 opacity-30 pointer-events-none">
         <ThreeJsBackground />
       </div>
 
-      {/* Content */}
+      { }
       <motion.div
         className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center"
         style={{ opacity }}
@@ -87,7 +88,6 @@ export default function AnimatedHero({ images }: Props) {
           </span>
         </motion.h1>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,9 +98,14 @@ export default function AnimatedHero({ images }: Props) {
             size="lg"
             onClick={scrollToNext}
             className="bg-green-600 hover:bg-green-700 rounded-full px-8 py-6 text-lg font-bold"
+            asChild
           >
-            अभी शुरू करें
-            <ArrowRight className="ml-2" />
+            <Link href="https://products.tcbtjaivikkisan.com">
+              <span className="flex items-center">
+                <ArrowRight className="mr-2" />
+                अभी शुरू करें
+              </span>
+            </Link>
           </Button>
 
           <Button
@@ -109,14 +114,12 @@ export default function AnimatedHero({ images }: Props) {
             className="bg-white/10 text-white border-white/40 rounded-full px-8 py-6 text-lg"
             asChild
           >
-            <a
-              href="https://www.youtube.com/@TarachandBelji"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <YoutubeIcon className="mr-2" />
-              YouTube देखें
-            </a>
+            <Link href="/chatbot">
+              <span className="flex items-center">
+                <ArrowRight className="mr-2" />
+                चैटबॉट से बात करें
+              </span>
+            </Link>
           </Button>
         </motion.div>
       </motion.div>
