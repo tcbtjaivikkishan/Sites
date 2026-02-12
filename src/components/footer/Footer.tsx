@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Footer = () => {
   const quickLinks = [
-    { "name": "Our Solutions", "href": "/solutions" },
+    { "name": "हमारी समाधान", "href": "/solutions" },
 
     { "name": "कृषि तैयारी", "href": "/krishi-taiyari" },
     { "name": "चरणबद्ध प्रक्रिया", "href": "/charanbaddh-prakriya" },
     { "name": "अग्निहोत्र", "href": "/agnihotra" },
 
     { "name": "ऊर्जा विज्ञान", "href": "/urja-vigyan" },
-    { "name": "Formula", "href": "/formula" },
+    // { "name": "फ़ॉर्मूला", "href": "/formula" },
 
     { "name": "भूमि उपचार", "href": "/bhoomi-upchar" },
     { "name": "पंचमहाभूत", "href": "/panchmahabhoot" }
@@ -183,8 +183,8 @@ const Footer = () => {
               <div className="space-y-5">
                 <div>
                   <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Phone / WhatsApp</p>
-                  <a href="tel:+919876543210" className="text-sm font-semibold text-gray-800 hover:text-green-600 transition-colors">
-                    +91 98765 43210
+                  <a href="tel:+919039007835" className="text-sm font-semibold text-gray-800 hover:text-green-600 transition-colors">
+                    +91 90390 07835
                   </a>
                   <p className="text-xs text-gray-500 mt-0.5">24 x 7 Available</p>
                 </div>

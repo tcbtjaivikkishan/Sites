@@ -1,5 +1,5 @@
 // app/about-tarachand-belji/page.tsx
-import AboutContent from '@/components/about/about-tarachand-belji';
+import AboutContent from '@/components/about/tarachand-belji';
 import {
   bioData,
   timeline,

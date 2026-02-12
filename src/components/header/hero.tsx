@@ -1,4 +1,4 @@
-import AnimatedHero from '@/components/header/AnimatedHero'
+import AnimatedHero from '@/components/header/HeroClient'
 
 export default function Hero() {
   const heroImages = [

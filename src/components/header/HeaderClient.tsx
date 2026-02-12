@@ -74,12 +74,12 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 transition={{ delay: 0.2 }}
               >
                 <motion.a
-                  href="tel:+919876543210"
+                  href="tel:+919039007835"
                   className="flex items-center gap-2 hover:text-yellow-300 transition-colors group"
                   whileHover={{ scale: 1.05 }}
                 >
                   <PhoneIcon className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 90390 07835</span>
                 </motion.a>
                 <motion.a
                   href="mailto:info@tcbtjaivikkisan.com"
@@ -98,7 +98,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 transition={{ delay: 0.3 }}
               >
                 <motion.a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919039007835"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
@@ -115,7 +115,7 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                   whileHover={{ scale: 1.1, rotate: -5 }}
                 >
                   <YouTubeIcon className="w-4 h-4" />
-                  <span>YouTube चैनल</span>
+                  <span>YouTube</span>
                 </motion.a>
                 <motion.div whileHover={{ scale: 1.05 }}>
                   <Link
@@ -211,14 +211,14 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
             <div className="flex items-center gap-2 lg:hidden">
               {/* Quick WhatsApp Button - Mobile */}
               <motion.a
-                href="https://wa.me/919876543210"
+                href="https://products.tcbtjaivikkisan.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-green-50 hover:bg-green-100 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <WhatsAppIcon className="w-5 h-5 text-green-600" />
+                <ShoppingCartIcon className="w-5 h-5 text-green-600" />
               </motion.a>
 
               {/* Mobile Menu Button */}
@@ -281,11 +281,11 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 {/* Mobile Menu Contact Info */}
                 <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white p-4 space-y-2">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919039007835"
                     className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
                   >
                     <PhoneIcon className="w-4 h-4" />
-                    <span className="text-sm">+91 98765 43210</span>
+                    <span className="text-sm">+91 9039007835</span>
                   </a>
                   <a
                     href="mailto:info@tcbtjaivikkisan.com"
@@ -318,13 +318,22 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
                 {/* Mobile Footer Actions */}
                 <div className="border-t border-gray-200 p-4 space-y-3">
                   <a
+                    href="https://wa.me/919039007835"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 bg-red-50 rounded-lg hover:bg-red-100 transition-colors"
+                  >
+                    <WhatsAppIcon className="w-5 h-5 text-green-600" />
+                    <span className="font-semibold text-gray-700">WhatsApp</span>
+                  </a>
+                  <a
                     href="https://www.youtube.com/@TarachandBelji"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 bg-red-50 rounded-lg hover:bg-red-100 transition-colors"
                   >
                     <YouTubeIcon className="w-5 h-5 text-red-600" />
-                    <span className="font-semibold text-gray-700">YouTube चैनल</span>
+                    <span className="font-semibold text-gray-700">YouTube</span>
                   </a>
                   <Link
                     href="https://products.tcbtjaivikkisan.com"

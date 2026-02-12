@@ -15,7 +15,7 @@ export default function Header() {
         { name: "अग्निहोत्र", href: "/agnihotra" },
 
         { name: "ऊर्जा विज्ञान", href: "/urja-vigyan" },
-        { name: "फ़ॉर्मूला", href: "/formula" },
+        // { name: "फ़ॉर्मूला", href: "/formula" },
 
         { name: "भूमि उपचार", href: "/bhoomi-upchar" },
         { name: "पंचमहाभूत", href: "/panchmahabhoot" }
