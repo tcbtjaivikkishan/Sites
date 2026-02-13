@@ -2,55 +2,55 @@
 const processSteps = [
   {
     id: 1,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20180940.png",
+    image: "/Charanbaddh-prakriya/img_1.png",
     title: "देशी गाय का महत्व",
     description: "देशी भारतीय गाय होना चाहिए और गोबर की ऊर्जा पॉजिटिव और पंचमहाभूत पूर्ण हो"
   },
   {
     id: 2,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20180953.png",
+    image: "/Charanbaddh-prakriya/img_2.png",
     title: "अग्निहोत्र भस्म",
     description: "अग्निहोत्र भस्म में पंचमहाभूतों की पाँचों ऊर्जाएं होनी चाहिए"
   },
   {
     id: 3,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181004.png",
+    image: "/Charanbaddh-prakriya/img_3.png",
     title: "कृषि भूमि की ऊर्जा",
     description: "कृषि भूमि की ऊर्जा पॉजिटिव हो और पंचमहाभूत पूर्ण हो"
   },
   {
     id: 4,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181018.png",
+    image: "/Charanbaddh-prakriya/img_4.png",
     title: "बीजों की ऊर्जा",
     description: "बीजों की ऊर्जा पॉजिटिव हो और पंचमहाभूत पूर्ण हो"
   },
   {
     id: 5,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181038.png",
+    image: "/Charanbaddh-prakriya/img_5.png",
     title: "जल की शुद्धता",
     description: "जल की ऊर्जा पॉजिटिव हो और पंचमहाभूत पूर्ण हो"
   },
   {
     id: 6,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181051.png",
+    image: "/Charanbaddh-prakriya/img_6.png",
     title: "भूमि का PH स्तर",
     description: "भूमि के PH 7.2, और कार्बन 1% से ऊपर हो"
   },
   {
     id: 7,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181105.png",
+    image: "/Charanbaddh-prakriya/img_7.png",
     title: "बीज बोवाई",
     description: "बीजों को निश्चित नक्षत्र पर बोवाई करें (TCBT कृषि पंचाग के अनुसार) बीज शोधन और बीज संस्कार भी अपनाएँ"
   },
   {
     id: 8,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181125.png",
+    image: "/Charanbaddh-prakriya/img_8.png",
     title: "अमावस्या प्रक्रिया",
     description: "हर अमावस्या के आसपास ऊर्जा जल एवं अणु जल फसलों में सिंचाई के साथ डालें और छाछ द्रव्य रसायन का स्प्रे करें"
   },
   {
     id: 9,
-    image: "https://www.tcbtjaivikkisan.com/files/Gallary/process/Screenshot%202025-11-19%20181142.png",
+    image: "/Charanbaddh-prakriya/img_9.png",
     title: "पूर्णिमा प्रक्रिया",
     description: "हर पूर्णिमा के आसपास हाई सीएन रेशियो एवं जीवाणु जल फसलों में सिंचाई के साथ डालें, पंचगव्य का स्प्रे करें"
   }
@@ -67,8 +67,8 @@ export default function ChranbaddhPage() {
         
         {/* Ambient Orbs */}
         <div className="absolute top-20 -right-32 w-96 h-96 bg-emerald-200/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
-        <div className="absolute -bottom-20 -left-32 w-[500px] h-[500px] bg-amber-200/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-200/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-20 -left-32 w-125 h-125 bg-amber-200/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-green-200/5 rounded-full blur-3xl" />
       </div>
 
       {/* Hero Section */}
@@ -78,14 +78,14 @@ export default function ChranbaddhPage() {
           {/* Decorative Top Element */}
           <div className="flex justify-center mb-8 animate-fadeIn">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-12 md:w-16 bg-linear-to-r from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-0.5 w-12 md:w-16 bg-linear-to-r from-transparent via-emerald-600/50 to-emerald-600" />
               <div className="text-emerald-700">
                 <svg className="w-6 h-6 md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M12 2L7 12h10L12 2z" />
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" opacity="0.4" />
                 </svg>
               </div>
-              <div className="h-[2px] w-12 md:w-16 bg-linear-to-l from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-0.5 w-12 md:w-16 bg-linear-to-l from-transparent via-emerald-600/50 to-emerald-600" />
             </div>
           </div>
 
@@ -173,7 +173,7 @@ export default function ChranbaddhPage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-lg md:text-xl font-bold text-emerald-800 mb-3 min-h-[3.5rem] flex items-center">
+                  <h3 className="text-lg md:text-xl font-bold text-emerald-800 mb-3 min-h-14 flex items-center">
                     {step.title}
                   </h3>
                   <p className="text-sm md:text-base text-stone-600 leading-relaxed">

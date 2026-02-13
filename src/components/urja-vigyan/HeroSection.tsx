@@ -1,11 +1,8 @@
-import Link from "next/link";
 
 type HeroData = {
   heading: string;
   highlight: string;
   subtitle: string;
-  ctaText: string;
-  ctaHref: string;
 };
 
 export default function HeroSection({ data }: { data: HeroData }) {
@@ -37,17 +34,6 @@ export default function HeroSection({ data }: { data: HeroData }) {
         </div>
         <div className="h-px w-16 bg-linear-to-r from-transparent via-green-600 to-transparent" />
       </div>
-
-      {/* CTA */}
-      <Link
-        href={data.ctaHref}
-        className="inline-flex items-center gap-2 bg-green-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-green-800 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
-      >
-        {data.ctaText}
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </Link>
     </div>
   );
 }

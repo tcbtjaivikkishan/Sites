@@ -1,7 +1,6 @@
 import Hero from '@/components/header/hero'
 import Statistics from '@/components/home/server/Statistics'
 import { Badge } from '@/components/ui/badge'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Testimonials from '@/components/home/testimonials/Testimonials'
 import Image from 'next/image'
 import PanchMahabhut from '@/components/home/server/PanchMahabhut'
@@ -17,8 +16,8 @@ export default async function Home() {
       <section className="relative py-20 md:py-28 bg-linear-to-br from-emerald-50 via-white to-green-50 overflow-hidden">
 
         { }
-        <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-emerald-200/40 rounded-full blur-3xl -z-10" />
-        <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-green-200/40 rounded-full blur-3xl -z-10" />
+        <div className="absolute -top-32 -left-32 w-100 h-100 bg-emerald-200/40 rounded-full blur-3xl -z-10" />
+        <div className="absolute -bottom-32 -right-32 w-100 h-100 bg-green-200/40 rounded-full blur-3xl -z-10" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-12">
 
@@ -122,7 +121,7 @@ export default async function Home() {
           <div className="relative">
 
             { }
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full"></div>
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-linear-to-b from-green-400 to-emerald-600 rounded-full"></div>
 
             <div className="space-y-12">
 

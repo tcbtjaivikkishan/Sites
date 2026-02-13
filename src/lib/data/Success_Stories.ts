@@ -9,13 +9,13 @@ export interface SuccessStory {
 export const successStoriesData: SuccessStory[] = [
   {
     id: "story-1",
-    title: "5 एकड़ में 7 लाख रुपये की वार्षिक उपज",
+    title: "500 एकड़ में 20 करोड़ रुपये का वार्षिक टर्नओवर",
     description:
-      "2019 से जैविक खेती की शुरुआत करके कपास, गेहूँ, चना और सरसों जैसी फसलों में ताराचंद बेलजी तकनीक से भूमि उपचार किया गया, जिससे सरसों में प्रति एकड़ 12.70 क्विंटल और कपास में 14 क्विंटल तक की उपज मिली तथा खेती की पद्धति और जीवनशैली दोनों में बड़ा बदलाव आया।",
+      "ऊर्जा जल, अणु जल, जीवाणु जल, फसल घुट्टी और हाई सीएन रेशियो स्लरी घोल के उपयोग से नीबू, अमरूद, मिर्च, टमाटर और जीरा सहित 35 से अधिक फसलों की उपज आसपास की रासायनिक खेती से अधिक मिली और लगभग 500 एकड़ में 20 करोड़ रुपये का प्रमाणित जैविक टर्नओवर बना।",
     farmer:
-      "– श्री कृष्ण शर्मा, ग्राम बुढेड़ा, भिवानी, हरियाणा",
+      "– श्री लेखराम यादव, ग्राम गोरधनपुरा, कोटपुतली, राजस्थान",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmers/krisana%20sharma%20ji.webp",
+      "/farmers/lekhram.webp",
   },
   {
     id: "story-2",
@@ -25,7 +25,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– श्री बाला साहेब माने, कुम्बडगांव, तह. गोरेगांव, जिला सतारा, महाराष्ट्र",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmers/balasaheb%20mane%20mh.webp",
+      "/farmers/balasaheb.webp",
   },
   {
     id: "story-3",
@@ -35,7 +35,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– श्री नितीन सेवले, ग्राम मोकभंगी, जिला नासिक, महाराष्ट्र",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/optimized_NITIN_200x241.webp",
+      "/farmers/nitin.webp",
   },
   {
     id: "story-4",
@@ -45,17 +45,17 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– चंदन कुमार मोतीलाल जाट, ग्राम टवलई, जिला धार, मध्यप्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/CHANDAN.webp",
+      "/farmers/chandan.webp",
   },
   {
     id: "story-5",
-    title: "500 एकड़ में 20 करोड़ रुपये का वार्षिक टर्नओवर",
+    title: "5 एकड़ में 7 लाख रुपये की वार्षिक उपज",
     description:
-      "ऊर्जा जल, अणु जल, जीवाणु जल, फसल घुट्टी और हाई सीएन रेशियो स्लरी घोल के उपयोग से नीबू, अमरूद, मिर्च, टमाटर और जीरा सहित 35 से अधिक फसलों की उपज आसपास की रासायनिक खेती से अधिक मिली और लगभग 500 एकड़ में 20 करोड़ रुपये का प्रमाणित जैविक टर्नओवर बना।",
+      "2019 से जैविक खेती की शुरुआत करके कपास, गेहूँ, चना और सरसों जैसी फसलों में ताराचंद बेलजी तकनीक से भूमि उपचार किया गया, जिससे सरसों में प्रति एकड़ 12.70 क्विंटल और कपास में 14 क्विंटल तक की उपज मिली तथा खेती की पद्धति और जीवनशैली दोनों में बड़ा बदलाव आया।",
     farmer:
-      "– श्री लेखराम यादव, ग्राम गोरधनपुरा, कोटपुतली, राजस्थान",
+      "– श्री कृष्ण शर्मा, ग्राम बुढेड़ा, भिवानी, हरियाणा",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmers/lekhram%20with%20leman.webp",
+      "/farmers/krisana_sharma_ji.webp",
   },
   {
     id: "story-6",
@@ -65,7 +65,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– श्री लेखराम यादव, ग्राम गोरधनपरा, कोटपुतली, राजस्थान",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmers/IMG-20230522-WA0140-mirch.jpg",
+      "/farmers/lekhram.webp",
   },
   {
     id: "story-7",
@@ -76,7 +76,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– श्री बाबलाल कागू, ग्राम मनवाड़ा, जिला बड़वानी, मध्यप्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/babu%20lal%20kag-%20papita.webp",
+      "/farmers/babu_lal_kag.webp",
   },
   {
     id: "story-8",
@@ -87,7 +87,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– श्री निखिल रजक, करेली, मध्यप्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/optimized_nikhil%20rajka_200x184.webp",
+      "/farmers/nikhil_rajka.webp",
   },
   {
     id: "story-9",
@@ -98,7 +98,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– किtta बरार, ग्राम बराड़कला, जिला मुक्तसर साहिब, पंजाब",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/optimized_kitta%20barar_200x201.webp",
+      "/farmers/kitta_barar.webp",
   },
   {
     id: "story-10",
@@ -109,7 +109,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– विनय सिंह ठाकुर, ग्राम फुलर, जिला जबलपुर, मध्यप्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/optimized_vinay%20singh_200x93.webp",
+      "/farmers/vinay_singh.webp",
   },
   {
     id: "story-11",
@@ -120,7 +120,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– बाबू लाल काग, बड़वानी, मध्यप्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/babu%20lal%20kag-%20papita-1.webp",
+      "/farmers/babu_lal_kag.webp",
   },
   {
     id: "story-12",
@@ -131,7 +131,7 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– राहुल कुमार, हाथरस, उत्तर प्रदेश",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/optimized_RAHUL_200x259.webp",
+      "/farmers/rahul_kumar.webp",
   },
   {
     id: "story-13",
@@ -142,6 +142,6 @@ export const successStoriesData: SuccessStory[] = [
     farmer:
       "– संजय महाजन, ग्राम भोडगांव, जिला जलगाँव, महाराष्ट्र",
     image:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/farmer%202/WhatsApp%20Image%202024-08-30%20at%204.39.47%20PM.webp",
+      "/farmers/sanjay_mahajan.webp",
   },
 ];

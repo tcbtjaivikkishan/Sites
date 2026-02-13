@@ -1,4 +1,4 @@
-// src/lib/data/urjaVigyan.content.ts
+
 
 export type UrjaCard = {
   title: string;
@@ -22,9 +22,6 @@ export type UrjaVigyanContent = {
     heading: string;
     highlight: string;
     subtitle: string;
-    ctaText: string;
-    ctaHref: string;
-    bgImage: string;
   };
 
   intro: {
@@ -53,7 +50,6 @@ export type UrjaVigyanContent = {
       subtitle: string;
     };
     note: string;
-    bgImage: string;
   };
 
   nineEnergies: {
@@ -124,10 +120,6 @@ export const urjaVigyanContent: UrjaVigyanContent = {
     heading: "TCBT",
     highlight: "ऊर्जा विज्ञान",
     subtitle: "प्रकृति का स्वयंपोषी और स्वयंविकासी ऊर्जा चक्र",
-    ctaText: "मुख्य पृष्ठ पर जाएं",
-    ctaHref: "https://www.tcbtjaivikkisan.com",
-    bgImage:
-      "https://www.tcbtjaivikkisan.com/files/Gallary/Home/WhatsApp%20Image%202025-12-16%20at%2016.05.05.jpeg",
   },
 
   intro: {
@@ -206,15 +198,13 @@ export const urjaVigyanContent: UrjaVigyanContent = {
     },
     note:
       "अभी संक्षिप्त में मैं नौ ऊर्जाओं का निर्माण क्रम आपको बता रहा हूँ। क्योंकि इसी क्रम का उपयोग करके अतिरिक्त ऊर्जा देकर अतिरिक्त उत्पादन प्राप्त कर सकते हैं।",
-    bgImage:
-      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=60",
   },
 
   nineEnergies: {
     title: "नौ ऊर्जाओं का दृश्य निरूपण",
     subtitle: "प्रकृति की रचना में नौ मूलभूत ऊर्जाएं कार्यरत हैं",
     image: {
-      src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/optimized_Screenshot%202025-11-19%20185037_415x297.png",
+      src: "/Urja-Vigyan/img_1.png",
       alt: "नौ ऊर्जाओं का प्रकृति निर्माण क्रम",
     },
     badge: "9 ऊर्जाएं",
@@ -241,11 +231,11 @@ export const urjaVigyanContent: UrjaVigyanContent = {
     ],
     images: [
       {
-        src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/Screenshot%202025-11-19%20190349.png",
+        src: "/Urja-Vigyan/img_2.png",
         alt: "ऊर्जा की गति चित्र 1",
       },
       {
-        src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/optimized_Screenshot%202025-11-25%20132519_655x344.png",
+        src: "/Urja-Vigyan/img_3.png",
         alt: "ऊर्जा की गति चित्र 2",
       },
     ],
@@ -258,7 +248,7 @@ export const urjaVigyanContent: UrjaVigyanContent = {
       "सकारात्मक ऊर्जा प्रकृति का सृजन करती है, नकारात्मक ऊर्जा प्रकृति का विघटन करती है।",
     ],
     footerImage: {
-      src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/optimized_Screenshot%202025-11-19%20190225_563x119.png",
+      src: "/Urja-Vigyan/img_4.png",
       alt: "ऊर्जा प्रवाह",
     },
   },
@@ -266,7 +256,7 @@ export const urjaVigyanContent: UrjaVigyanContent = {
   manureCycle: {
     title: "सूखे गोबर का ढेर (घूरा) का ऊर्जा चक्र",
     mainDiagram: {
-      src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/optimized_TCBT-book12_500x692.jpg",
+      src: "/Urja-Vigyan/img_5.jpg",
       alt: "घूरे का ऊर्जा चक्र - मुख्य चित्र",
     },
 
@@ -319,11 +309,11 @@ export const urjaVigyanContent: UrjaVigyanContent = {
         "निष्कर्ष: जैसी ऊर्जा होगी वैसे अणु और जीवाणु उत्पन्न होते हैं। पौधे की पत्तियाँ चमकदार तो होती हैं पर ऐसी फसल से उपज कम आती है।",
       images: [
         {
-          src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/Screenshot%202025-11-27%20110851.png",
+          src: "/Urja-Vigyan/img_6.png",
           alt: "TCBT पुस्तक - ऊर्जा विज्ञान",
         },
         {
-          src: "https://www.tcbtjaivikkisan.com/files/Gallary/energetics/Screenshot%202025-11-28%20125722.png",
+          src: "/Urja-Vigyan/img_7.png",
           alt: "ऊर्जा चक्र प्रक्रिया",
         },
       ],

@@ -23,7 +23,6 @@ type CosmicData = {
     subtitle: string;
   };
   note: string;
-  bgImage: string;
 };
 
 const accentColors = {
