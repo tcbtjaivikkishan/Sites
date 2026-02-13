@@ -62,6 +62,12 @@ export default function AboutPage() {
                         email: "akshay.patel@tcbtjaivikkisan.com",
                     },
                     {
+                        name: "Riya Pandey",
+                        designation: "Human Resources",
+                        linkedin: "https://www.linkedin.com/in/riya-pandey-2aa688242/",
+                        email: "hr@tcbtjaivikkisan.com",
+                    },
+                    {
                         name: "Atharve Agrawal",
                         designation: "Full Stack Engineer",
                         linkedin: "https://linkedin.com/in/atharve-agrawal",
@@ -99,7 +105,7 @@ export default function AboutPage() {
                     {
                         name: "Pooja Soni",
                         designation: "Operations Executive",
-                        linkedin: "https://linkedin.com/in/pooja-soni",
+                        linkedin: "www.linkedin.com/in/pooja-soni-2a77241a9",
                         email: "pooja.soni@tcbtjaivikkisan.com",
                     },
                     {
@@ -127,13 +133,13 @@ export default function AboutPage() {
                 members: [
                     {
                         name: "Ranveer Singh",
-                        designation: "Customer Care (Farmer Support)",
+                        designation: "Agricultural Marketing Specialist",
                         linkedin: "https://linkedin.com/in/ranveer-singh",
                         email: "ranveer.singh@tcbtjaivikkisan.com",
                     },
                     {
                         name: "Suresh Ji",
-                        designation: "Customer Care (Technical Support)",
+                        designation: "Agricultural Product Specialist",
                         linkedin: "https://linkedin.com/in/suresh-ji",
                         email: "suresh.ji@tcbtjaivikkisan.com",
                     },

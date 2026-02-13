@@ -14,16 +14,40 @@ export default function AboutUI({ data }: AboutUIProps) {
   return (
     <main className="bg-gradient-to-b from-green-50 via-white to-green-50">
 
-      <section className="text-center py-20 px-6">
-        <h1 className="text-5xl font-bold text-green-900 mb-4">
-          {data.hero.heading}
-        </h1>
-        <p className="text-xl text-green-700 font-semibold mb-2">
-          {data.hero.tagline}
-        </p>
-        <p className="text-gray-600 max-w-2xl mx-auto">{data.hero.subtitle}</p>
-      </section>
+      <section className="relative py-20 md:py-32 px-6 text-center">
+        <div className="max-w-5xl mx-auto space-y-6">
 
+          <div className="flex justify-center mb-8 animate-fadeIn">
+            <div className="flex items-center gap-3">
+              <div className="h-[2px] w-16 bg-linear-to-r from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="text-emerald-700">
+                <Leaf className="w-8 h-8" />
+              </div>
+              <div className="h-[2px] w-16 bg-linear-to-l from-transparent via-emerald-600/50 to-emerald-600" />
+            </div>
+          </div>
+
+          <h1 className="space-y-2">
+            <div className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-slideUp">
+              <span className="inline-block bg-linear-to-br from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
+                {data.hero.heading}
+              </span>
+            </div>
+          </h1>
+
+          <p
+            className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed animate-slideUp"
+            style={{ animationDelay: "0.2s", animationFillMode: "backwards" }}
+          >
+            {data.hero.subtitle}
+          </p>
+
+          <div className="flex justify-center pt-6 animate-fadeIn" style={{ animationDelay: "0.3s" }}>
+            <div className="w-24 h-1 bg-linear-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
+          </div>
+
+        </div>
+      </section>
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="bg-white p-10 rounded-3xl shadow-lg border-2 border-green-100">
@@ -82,7 +106,7 @@ export default function AboutUI({ data }: AboutUIProps) {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -164,61 +188,61 @@ export default function AboutUI({ data }: AboutUIProps) {
         </div>
       </section>
 
-      {/* 6️⃣ GALLERY SECTION */}
-<section className="max-w-7xl mx-auto px-6 py-20">
-  <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-3">
-      हमारी ऑफिस संस्कृति
-    </h2>
-    <p className="text-green-700">
-      टीमवर्क, नवाचार और सहयोग का वातावरण
-    </p>
-  </div>
+      { }
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-3">
+            हमारी ऑफिस संस्कृति
+          </h2>
+          <p className="text-green-700">
+            टीमवर्क, नवाचार और सहयोग का वातावरण
+          </p>
+        </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
 
-    {/* BIG IMAGE (Left - 2 rows, 2 columns) */}
-    <div className="relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden group">
-      <Image
-        src={data.gallery[0]}
-        alt="gallery-1"
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-700"
-      />
-    </div>
+          { }
+          <div className="relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden group">
+            <Image
+              src={data.gallery[0]}
+              alt="gallery-1"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
 
-    {/* SMALL 1 (Top Right) */}
-    <div className="relative rounded-3xl overflow-hidden group">
-      <Image
-        src={data.gallery[1]}
-        alt="gallery-2"
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-700"
-      />
-    </div>
+          { }
+          <div className="relative rounded-3xl overflow-hidden group">
+            <Image
+              src={data.gallery[1]}
+              alt="gallery-2"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
 
-    {/* SMALL 2 (Top Far Right) */}
-    <div className="relative rounded-3xl overflow-hidden group">
-      <Image
-        src={data.gallery[2]}
-        alt="gallery-3"
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-700"
-      />
-    </div>
+          { }
+          <div className="relative rounded-3xl overflow-hidden group">
+            <Image
+              src={data.gallery[2]}
+              alt="gallery-3"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
 
-    {/* MID IMAGE (Bottom Right Wide) */}
-    <div className="relative md:col-span-2 rounded-3xl overflow-hidden group">
-      <Image
-        src={data.gallery[3]}
-        alt="gallery-4"
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-700"
-      />
-    </div>
+          { }
+          <div className="relative md:col-span-2 rounded-3xl overflow-hidden group">
+            <Image
+              src={data.gallery[3]}
+              alt="gallery-4"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
 
       <section className="py-20 bg-green-100 text-center">

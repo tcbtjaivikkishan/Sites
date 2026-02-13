@@ -1,5 +1,7 @@
-import { Leaf, Phone, Mail, MapPin, Youtube, Facebook, Instagram, LinkedinIcon, TwitterIcon } from 'lucide-react';
+import { Leaf, Phone, Youtube, Facebook, Instagram, LinkedinIcon } from 'lucide-react';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const quickLinks = [
@@ -10,14 +12,14 @@ const Footer = () => {
     { "name": "अग्निहोत्र", "href": "/agnihotra" },
 
     { "name": "ऊर्जा विज्ञान", "href": "/urja-vigyan" },
-    // { "name": "फ़ॉर्मूला", "href": "/formula" },
+
 
     { "name": "भूमि उपचार", "href": "/bhoomi-upchar" },
     { "name": "पंचमहाभूत", "href": "/panchmahabhoot" }
   ];
 
   const resources = [
-    { "name": "About Us", "href": "/about-us" },
+    { "name": "About Us", "href": "/about" },
     { "name": "Contact Us", "href": "/contact" },
 
     { "name": "About Plants", "href": "/vrikshayurveda" },
@@ -27,6 +29,34 @@ const Footer = () => {
     { "name": "TCBT Science", "href": "/tcbt-science" },
     { "name": "TCBT Farming Methodology", "href": "/farming-methodology" },
     { "name": "Gallery & Field Impact", "href": "/gallery-field-impact" }
+  ];
+
+  const socialLinks = [
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/taracanda.belaji/?rdid=tUkRDnMmio3g5Ho7",
+      icon: Facebook,
+    },
+    {
+      name: "YouTube",
+      href: "https://www.youtube.com/@TarachandBelji",
+      icon: Youtube,
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/jaivikkisaan/?igsh=MTZqcjFmYnFnaXUycw%3D%3D#",
+      icon: Instagram,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/company/112077141/admin/dashboard/",
+      icon: LinkedinIcon,
+    },
+    {
+      name: "whatsApp",
+      href: "https://wa.me/919039007835",
+      icon: WhatsAppIcon,
+    },
   ];
 
   return (
@@ -82,41 +112,22 @@ const Footer = () => {
                 <div>
                   <p className="text-green-200 text-xs font-semibold mb-3 uppercase tracking-wide">Connect With Us</p>
                   <div className="flex gap-3">
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
-                      aria-label="Facebook"
-                    >
-                      <Facebook className="w-5 h-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
-                      aria-label="YouTube"
-                    >
-                      <Youtube className="w-5 h-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
-                      aria-label="Instagram"
-                    >
-                      <Instagram className="w-5 h-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
-                      aria-label="LinkedIn"
-                    >
-                      <LinkedinIcon className="w-5 h-5 text-white" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
-                      aria-label="Twitter"
-                    >
-                      <TwitterIcon className="w-5 h-5 text-white" />
-                    </a>
+                    {socialLinks.map((social, index) => {
+                      const Icon = social.icon;
+
+                      return (
+                        <Link
+                          key={index}
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={social.name}
+                          className="w-10 h-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all hover:scale-110"
+                        >
+                          <Icon className="w-5 h-5 text-white" />
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -200,7 +211,7 @@ const Footer = () => {
                 <div>
                   <p className="text-xs text-green-600 font-semibold mb-1 uppercase">Our Location</p>
                   <p className="text-sm font-semibold text-gray-800">Village Kanai, Pt. Chandna Paraswada , Balaghat, MP 481566</p>
-                  <p className="text-xs text-gray-500 mt-0.5">training center</p>
+                  <p className="text-xs text-gray-500 mt-0.5">Manufacturing Office</p>
                 </div>
 
                 <div>

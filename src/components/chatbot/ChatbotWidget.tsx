@@ -39,22 +39,21 @@ export default function ChatbotWidget({
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const prevMessageCountRef = useRef<number>(messages.length);
 
-
   useEffect(() => {
-    const savedToken = localStorage.getItem("chatToken");
+    const initializeChat = async () => {
+      const savedToken = localStorage.getItem("chatToken");
 
-    if (!token && savedToken) {
-      dispatch(setToken(savedToken));
-      dispatch(fetchChats());
-    }
-    else if (!token && !savedToken) {
-      dispatch(createSession());
-    }
-    else if (token) {
-      dispatch(fetchChats());
-    }
-  }, [token, dispatch]);
+      if (savedToken) {
+        dispatch(setToken(savedToken));
+        dispatch(fetchChats());
+      } else {
+        const res = await dispatch(createSession()).unwrap();
+        localStorage.setItem("chatToken", res.token);
+      }
+    };
 
+    initializeChat();
+  }, []);
 
   useEffect(() => {
     if (messages.length > prevMessageCountRef.current) {
@@ -107,7 +106,6 @@ export default function ChatbotWidget({
           )}
         </AnimatePresence>
 
-        { }
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -144,7 +142,6 @@ export default function ChatbotWidget({
     );
   }
 
-
   return (
     <div className="h-[600px] flex flex-col">
       <ChatContent
@@ -160,8 +157,6 @@ export default function ChatbotWidget({
     </div>
   );
 }
-
-
 
 interface ChatContentProps {
   messages: { role: "user" | "assistant"; message: string }[];
@@ -187,9 +182,9 @@ function ChatContent({
   isMinimizable,
 }: ChatContentProps) {
   const suggestedQuestions = [
-    "जैविक खाद कैसे बनाएं?",
-    "कीटों से फसल कैसे बचाएं?",
-    "मिट्टी की उर्वरता कैसे बढ़ाएं?",
+    "अग्निहोत्र के मुख्य लाभ क्या हैं",
+    "भूमि उपचार की आवश्यकता क्यों है?",
+    "मिट्टी में जीवाणुओं की कमी से क्या समस्या होती है?",
   ];
 
   return (
@@ -234,8 +229,8 @@ function ChatContent({
             >
               <div
                 className={`max-w-[75%] p-3 rounded-2xl text-sm ${m.role === "user"
-                    ? "bg-green-600 text-white"
-                    : "bg-white border"
+                  ? "bg-green-600 text-white"
+                  : "bg-white border"
                   }`}
               >
                 {m.message}

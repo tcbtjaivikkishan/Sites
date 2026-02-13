@@ -150,9 +150,9 @@ export default function HeaderClient({ navLinks }: { navLinks: NavLink[] }) {
             {/* Logo - Responsive sizing */}
             <Link href="/" className="flex items-center gap-2 sm:gap-3 group shrink-0">
               <motion.div
-                whileHover={{ rotate: 360, scale: 1.15 }}
+                whileHover={{ scale: 1.15 }}
                 transition={{ duration: 0.6 }}
-                className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-green-500/50 rounded-full"
+                className="relative w-10 h-10 sm:w-12 sm:h-12 overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-green-500/50 "
               >
                 <Image
                   src="/logo.png"
