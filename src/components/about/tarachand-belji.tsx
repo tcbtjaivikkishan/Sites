@@ -114,7 +114,7 @@ export default function AboutContent({
             {/* Left: Photo Card */}
             <div className="md:col-span-2">
               <div className="sticky top-24">
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-green-600 to-emerald-700">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-linear-to-br from-green-600 to-emerald-700">
                   {/* Photo */}
                   <div className="aspect-[3/4] relative overflow-hidden">
                     <Image
@@ -139,7 +139,7 @@ export default function AboutContent({
                   </div>
                   
                   {/* Decorative corner */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-400/30 to-transparent" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-amber-400/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-blue-400/20 to-transparent" />
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function AboutContent({
             {impactStats.map((stat, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-4 border-2 border-green-200 text-center"
+                className="bg-linear-to-br from-green-100 to-emerald-100 rounded-2xl p-4 border-2 border-green-200 text-center"
               >
                 <div className="text-3xl font-bold text-green-800 mb-1">
                   {stat.value}
@@ -209,7 +209,7 @@ export default function AboutContent({
       <section className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid md:grid-cols-2 gap-6">
           {/* Journey */}
-          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-2xl shadow-lg p-6 md:p-8 border-2 border-blue-100">
+          <div className="bg-linear-to-br from-blue-50 to-sky-50 rounded-2xl shadow-lg p-6 md:p-8 border-2 border-blue-100">
             <div className="flex items-start gap-3 mb-4">
               <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-sky-500 rounded-full" />
               <h2 className="text-2xl md:text-3xl font-bold text-blue-900">शोध यात्रा</h2>
@@ -225,7 +225,7 @@ export default function AboutContent({
           </div>
 
           {/* TCBT Development */}
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg p-6 md:p-8 border-2 border-amber-100">
+          <div className="bg-linear-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg p-6 md:p-8 border-2 border-amber-100">
             <div className="flex items-start gap-3 mb-4">
               <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-orange-500 rounded-full" />
               <h2 className="text-2xl md:text-3xl font-bold text-amber-900">TCBT का विकास</h2>
@@ -248,7 +248,7 @@ export default function AboutContent({
           <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-3">
             यात्रा के मील के पत्थर
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto" />
+          <div className="w-20 h-1 bg-linear-to-r from-green-400 to-emerald-500 rounded-full mx-auto" />
         </div>
 
         <div className="relative">
@@ -268,7 +268,7 @@ export default function AboutContent({
                     isEven ? "-right-[1.125rem]" : "-left-[1.125rem]"
                   } w-8 h-8 rounded-full ${
                     event.highlight 
-                      ? "bg-gradient-to-br from-amber-400 to-orange-500 border-4 border-white shadow-lg" 
+                      ? "bg-linear-to-br from-amber-400 to-orange-500 border-4 border-white shadow-lg" 
                       : "bg-green-500 border-4 border-white shadow-lg"
                   } z-10 flex items-center justify-center`}
                 >
@@ -282,7 +282,7 @@ export default function AboutContent({
                 >
                   <div className={`inline-block px-3 py-1 rounded-full mb-3 text-sm ${
                     event.highlight 
-                      ? "bg-gradient-to-r from-amber-100 to-orange-100 text-orange-700" 
+                      ? "bg-linear-to-r from-amber-100 to-orange-100 text-orange-700" 
                       : "bg-green-100 text-green-700"
                   } font-bold`}>
                     {event.year}
@@ -312,7 +312,7 @@ export default function AboutContent({
           {philosophyPoints.map((point) => (
             <div
               key={point.id}
-              className="bg-gradient-to-br from-white to-green-50 rounded-xl p-6 shadow-md border-2 border-green-100 hover:border-green-300 hover:shadow-lg transition-all"
+              className="bg-linear-to-br from-white to-green-50 rounded-xl p-6 shadow-md border-2 border-green-100 hover:border-green-300 hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-green-500 mt-2" />
@@ -333,9 +333,9 @@ export default function AboutContent({
       {/* Vision & Mission */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-2xl p-6 md:p-8 shadow-lg border-2 border-blue-200">
+          <div className="bg-linear-to-br from-blue-50 to-sky-50 rounded-2xl p-6 md:p-8 shadow-lg border-2 border-blue-200">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-sky-600 flex items-center justify-center shadow-lg">
+              <div className="w-14 h-14 rounded-xl bg-linear-to-br from-blue-500 to-sky-600 flex items-center justify-center shadow-lg">
                 <Eye className="w-7 h-7 text-white" />
               </div>
               <div>
@@ -358,9 +358,9 @@ export default function AboutContent({
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 md:p-8 shadow-lg border-2 border-green-200">
+          <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-2xl p-6 md:p-8 shadow-lg border-2 border-green-200">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
+              <div className="w-14 h-14 rounded-xl bg-linear-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
                 <Target className="w-7 h-7 text-white" />
               </div>
               <div>
@@ -401,7 +401,7 @@ export default function AboutContent({
                 key={achievement.id}
                 className="bg-white rounded-xl p-6 shadow-md border-2 border-green-100 hover:border-green-300 hover:shadow-lg hover:-translate-y-1 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center mb-3 shadow-md">
+                <div className="w-12 h-12 rounded-xl bg-linear-to-br from-green-500 to-emerald-600 flex items-center justify-center mb-3 shadow-md">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-green-900 mb-1">

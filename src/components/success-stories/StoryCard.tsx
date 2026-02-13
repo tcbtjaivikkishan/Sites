@@ -83,7 +83,7 @@ export default function StoryCard({ story, index }: StoryCardProps) {
 
             <button
               onClick={handleReadMore}
-              className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+              className="w-full bg-linear-to-r from-green-600 to-green-700 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
               <span>पूरी कहानी पढ़ें</span>
               <ChevronRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />

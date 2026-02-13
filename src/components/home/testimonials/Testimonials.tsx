@@ -54,7 +54,7 @@ export default function Testimonials() {
   const current = testimonials[index];
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-emerald-50 via-white to-lime-50 overflow-hidden">
+    <section className="relative py-20 bg-linear-to-br from-emerald-50 via-white to-lime-50 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -66,7 +66,7 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-lime-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-green-600 via-emerald-600 to-lime-600 bg-clip-text text-transparent">
               हमारे किसान
             </span>
             <br />
@@ -81,13 +81,13 @@ export default function Testimonials() {
         <div className="relative max-w-5xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-green-100 transform transition-all duration-500 hover:shadow-green-200 hover:shadow-3xl">
             {/* Top decorative bar */}
-            <div className="h-2 bg-gradient-to-r from-green-400 via-emerald-400 to-lime-400"></div>
+            <div className="h-2 bg-linear-to-r from-green-400 via-emerald-400 to-lime-400"></div>
             
             <div className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Image section */}
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-green-400 to-emerald-400 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                   <div className="relative">
                     <img
                       src={current.image}
@@ -156,7 +156,7 @@ export default function Testimonials() {
               }}
               className={`transition-all duration-300 rounded-full ${
                 i === index 
-                  ? "w-12 h-4 bg-gradient-to-r from-green-500 to-emerald-500 shadow-lg" 
+                  ? "w-12 h-4 bg-linear-to-r from-green-500 to-emerald-500 shadow-lg" 
                   : "w-4 h-4 bg-green-200 hover:bg-green-300"
               }`}
             />

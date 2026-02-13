@@ -127,7 +127,7 @@ export default function AboutUI({ data }: AboutUIProps) {
                 className="bg-white rounded-2xl p-6 shadow-md border-2 border-green-100 hover:shadow-xl hover:border-green-300 transition-all duration-300"
               >
 
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-100 to-emerald-200 flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-linear-to-br from-green-100 to-emerald-200 flex items-center justify-center">
                   <User className="w-8 h-8 text-green-700" />
                 </div>
 

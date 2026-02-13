@@ -18,7 +18,7 @@ const Footer = () => {
 
   const resources = [
     { "name": "About Us", "href": "/about-us" },
-    { "name": "Contact Us", "href": "/contact-us" },
+    { "name": "Contact Us", "href": "/contact" },
 
     { "name": "About Plants", "href": "/vrikshayurveda" },
     { "name": "Tarachand Belji", "href": "/about-tarachand-belji" },

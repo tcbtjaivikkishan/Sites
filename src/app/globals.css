@@ -369,7 +369,7 @@ html {
   }
 
   .gradient-text {
-    @apply bg-gradient-to-br from-emerald-700 via-green-600 to-emerald-800 bg-clip-text text-transparent;
+    @apply bg-linear-to-br from-emerald-700 via-green-600 to-emerald-800 bg-clip-text text-transparent;
   }
 
   .glass {

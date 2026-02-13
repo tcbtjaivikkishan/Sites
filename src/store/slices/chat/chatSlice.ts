@@ -23,11 +23,16 @@ const initialState: ChatState = {
 const chatSlice = createSlice({
   name: "chat",
   initialState,
-  reducers: {},
+  reducers: {
+    setToken: (state, action: PayloadAction<string>) => {
+      state.token = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(createSession.fulfilled, (state, action) => {
         state.token = action.payload.token;
+        localStorage.setItem("chatToken", action.payload.token);
       })
       .addCase(fetchChats.fulfilled, (state, action) => {
         state.messages = action.payload;
@@ -49,4 +54,5 @@ const chatSlice = createSlice({
   },
 });
 
+export const { setToken } = chatSlice.actions;
 export default chatSlice.reducer;

@@ -82,7 +82,7 @@ export default function ScienceContent({ data }: ScienceContentProps) {
             ))}
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-green-700 via-green-600 to-emerald-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold bg-linear-to-r from-green-700 via-green-600 to-emerald-600 bg-clip-text text-transparent">
             TCBT Science
           </h1>
           
@@ -149,7 +149,7 @@ export default function ScienceContent({ data }: ScienceContentProps) {
                 className="group bg-white rounded-3xl shadow-lg border border-green-100 overflow-hidden hover:border-green-300 transition-colors"
               >
                 {/* Header Gradient */}
-                <div className="h-2 bg-gradient-to-r from-green-400 via-emerald-500 to-green-400" />
+                <div className="h-2 bg-linear-to-r from-green-400 via-emerald-500 to-green-400" />
 
                 <div className="p-8 md:p-10">
                   {/* Icon Badge */}
@@ -157,7 +157,7 @@ export default function ScienceContent({ data }: ScienceContentProps) {
                     initial={{ rotate: 0 }}
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-green-100 to-emerald-100 mb-4 group-hover:shadow-md transition-shadow`}
+                    className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-linear-to-br from-green-100 to-emerald-100 mb-4 group-hover:shadow-md transition-shadow`}
                   >
                     <Icon className={`w-7 h-7 ${iconColor}`} />
                   </motion.div>
@@ -206,7 +206,7 @@ export default function ScienceContent({ data }: ScienceContentProps) {
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.05 }}
                             whileHover={{ x: 4 }}
-                            className="flex items-start gap-3 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 px-5 py-4 border border-green-100 hover:border-green-300 hover:shadow-md transition-all cursor-default group/item"
+                            className="flex items-start gap-3 rounded-xl bg-linear-to-br from-green-50 to-emerald-50 px-5 py-4 border border-green-100 hover:border-green-300 hover:shadow-md transition-all cursor-default group/item"
                           >
                             <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-green-500 group-hover/item:scale-125 transition-transform" />
                             <span className="text-gray-700 leading-relaxed">

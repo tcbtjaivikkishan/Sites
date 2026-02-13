@@ -15,7 +15,7 @@ export default function UrjaVigyanPage() {
   return (
     <main className="min-h-screen bg-stone-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#f5f1e8] via-white to-green-50">
+      <section className="relative overflow-hidden bg-linear-to-br from-[#f5f1e8] via-white to-green-50">
         {/* Subtle agricultural pattern */}
         <div className="absolute inset-0 opacity-[0.03]">
           <div

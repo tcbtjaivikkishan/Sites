@@ -25,7 +25,7 @@ const PanchMahabhut = () => {
       link: '/urja-vigyan',
       gradient: 'from-yellow-400 to-orange-100',
       bgGradient: 'from-yellow-50 to-orange-50',
-      iconBg: 'bg-gradient-to-br from-yellow-100 to-orange-100',
+      iconBg: 'bg-linear-to-br from-yellow-100 to-orange-100',
       borderColor: 'hover:border-yellow-400',
       glowColor: 'hover:shadow-yellow-200',
     },
@@ -36,7 +36,7 @@ const PanchMahabhut = () => {
       link: '/agnihotra',
       gradient: 'from-orange-500 to-red-500',
       bgGradient: 'from-orange-50 to-red-50',
-      iconBg: 'bg-gradient-to-br from-orange-100 to-red-100',
+      iconBg: 'bg-linear-to-br from-orange-100 to-red-100',
       borderColor: 'hover:border-orange-400',
       glowColor: 'hover:shadow-orange-200',
     },
@@ -47,7 +47,7 @@ const PanchMahabhut = () => {
       link: '/vrikshayurveda',
       gradient: 'from-green-500 to-emerald-600',
       bgGradient: 'from-green-50 to-emerald-50',
-      iconBg: 'bg-gradient-to-br from-green-100 to-emerald-100',
+      iconBg: 'bg-linear-to-br from-green-100 to-emerald-100',
       borderColor: 'hover:border-green-400',
       glowColor: 'hover:shadow-green-200',
     },
@@ -58,7 +58,7 @@ const PanchMahabhut = () => {
       link: '/solutions',
       gradient: 'from-blue-500 to-indigo-600',
       bgGradient: 'from-blue-50 to-indigo-50',
-      iconBg: 'bg-gradient-to-br from-blue-100 to-indigo-100',
+      iconBg: 'bg-linear-to-br from-blue-100 to-indigo-100',
       borderColor: 'hover:border-blue-400',
       glowColor: 'hover:shadow-blue-200',
     },
@@ -69,14 +69,14 @@ const PanchMahabhut = () => {
       link: '/charanbaddh-prakriya',
       gradient: 'from-gray-500 to-gray-600',
       bgGradient: 'from-gray-50 to-gray-50',
-      iconBg: 'bg-gradient-to-br from-gray-100 to-gray-100',
+      iconBg: 'bg-linear-to-br from-gray-100 to-gray-100',
       borderColor: 'hover:border-gray-400',
       glowColor: 'hover:shadow-gray-200',
     },
   ];
 
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <section className="relative py-20 md:py-32 overflow-hidden bg-linear-to-br from-green-50 via-emerald-50 to-teal-50">
       { }
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -94,7 +94,7 @@ const PanchMahabhut = () => {
 
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             TCBT आधारित{' '}
-            <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
               प्राकृतिक कृषि विज्ञान
             </span>
           </h2>
@@ -112,7 +112,7 @@ const PanchMahabhut = () => {
               className={`group relative overflow-hidden transition-all duration-500 border-2 border-gray-200 ${technique.borderColor} ${technique.glowColor} hover:shadow-2xl hover:-translate-y-2 bg-white/80 backdrop-blur-sm`}
             >
               { }
-              <div className={`absolute inset-0 bg-gradient-to-br ${technique.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${technique.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
               <CardHeader className="relative z-10">
                 { }
@@ -132,7 +132,7 @@ const PanchMahabhut = () => {
 
                 <Button
                   asChild
-                  className={`w-1/2 mx-auto bg-gradient-to-r ${technique.gradient} hover:shadow-lg hover:scale-105 transition-all duration-300 text-white border-0 group/btn`}
+                  className={`w-1/2 mx-auto bg-linear-to-r ${technique.gradient} hover:shadow-lg hover:scale-105 transition-all duration-300 text-white border-0 group/btn`}
                 >
                   <Link href={technique.link} className="flex items-center justify-center gap-2">
                     <span className="font-semibold">और जानें</span>

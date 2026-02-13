@@ -14,7 +14,7 @@ export default async function Home() {
       <Hero />
       <Statistics />
 
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-emerald-50 via-white to-green-50 overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-linear-to-br from-emerald-50 via-white to-green-50 overflow-hidden">
 
         { }
         <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-emerald-200/40 rounded-full blur-3xl -z-10" />
@@ -96,7 +96,7 @@ export default async function Home() {
 
       <PanchMahabhut />
 
-      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-green-50 via-lime-50 to-emerald-100">
+      <section className="relative overflow-hidden py-16 md:py-24 bg-linear-to-br from-green-50 via-lime-50 to-emerald-100">
 
         { }
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-green-200 rounded-full blur-3xl opacity-30"></div>

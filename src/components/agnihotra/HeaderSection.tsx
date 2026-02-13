@@ -42,7 +42,7 @@ export default function HeroSection() {
         >
           <div className="relative">
             <div className="absolute inset-0 bg-orange-300/20 blur-2xl rounded-full scale-150" />
-            <div className="relative bg-gradient-to-br from-orange-400 to-amber-500 p-6 rounded-2xl shadow-xl">
+            <div className="relative bg-linear-to-br from-orange-400 to-amber-500 p-6 rounded-2xl shadow-xl">
               <Flame className="w-16 h-16 text-white" strokeWidth={1.5} />
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function HeroSection() {
 
         {/* Minimal Divider */}
         <div
-          className={`w-16 h-0.5 bg-gradient-to-r from-green-600 to-emerald-600 mx-auto mb-8 transition-all duration-1000 delay-300 ${
+          className={`w-16 h-0.5 bg-linear-to-r from-green-600 to-emerald-600 mx-auto mb-8 transition-all duration-1000 delay-300 ${
             mounted ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
           }`}
         />

@@ -476,7 +476,7 @@ export default function ContactForm() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="px-12 py-3 bg-gradient-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:shadow-lg transition-shadow duration-300"
+                className="px-12 py-3 bg-linear-to-r from-emerald-600 to-green-600 text-white font-semibold rounded-full hover:shadow-lg transition-shadow duration-300"
               >
                 सबमिट करें
               </motion.button>

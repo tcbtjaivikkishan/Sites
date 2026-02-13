@@ -18,7 +18,7 @@ export default function NineEnergiesSection({
   data: NineEnergiesData;
 }) {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 text-white relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-linear-to-br from-green-900 via-emerald-900 to-teal-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -37,7 +37,7 @@ export default function NineEnergiesSection({
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mx-auto mb-6" />
+          <div className="w-20 h-1 bg-linear-to-r from-green-400 to-emerald-400 rounded-full mx-auto mb-6" />
           <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             {data.subtitle}
           </p>
@@ -46,7 +46,7 @@ export default function NineEnergiesSection({
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl blur-2xl opacity-20" />
+            <div className="absolute -inset-4 bg-linear-to-r from-green-500 to-emerald-500 rounded-3xl blur-2xl opacity-20" />
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 shadow-2xl">
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
                 <Image
@@ -79,7 +79,7 @@ export default function NineEnergiesSection({
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
                   {[...Array(3)].map((_, i) => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 border-2 border-green-900" />
+                    <div key={i} className="w-8 h-8 rounded-full bg-linear-to-br from-green-400 to-emerald-500 border-2 border-green-900" />
                   ))}
                 </div>
                 <p className="text-white/60 text-sm">नौ ऊर्जाओं का संतुलन</p>

@@ -13,7 +13,7 @@ export const metadata = {
 export default function Page() {
 
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-emerald-50/40 overflow-hidden">
+    <main className="relative min-h-screen bg-linear-to-br from-stone-50 via-amber-50/30 to-emerald-50/40 overflow-hidden">
 
       { }
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
@@ -36,21 +36,21 @@ export default function Page() {
           { }
           <div className="flex justify-center mb-8 animate-fadeIn">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-16 bg-gradient-to-r from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-[2px] w-16 bg-linear-to-r from-transparent via-emerald-600/50 to-emerald-600" />
               <div className="text-emerald-700">
                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M12 2L7 12h10L12 2z" />
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" opacity="0.4" />
                 </svg>
               </div>
-              <div className="h-[2px] w-16 bg-gradient-to-l from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-[2px] w-16 bg-linear-to-l from-transparent via-emerald-600/50 to-emerald-600" />
             </div>
           </div>
 
           { }
           <h1 className="space-y-2">
             <div className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight animate-slideUp">
-              <span className="inline-block bg-gradient-to-br from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
+              <span className="inline-block bg-linear-to-br from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
                 TCBT
               </span>
             </div>
@@ -66,7 +66,7 @@ export default function Page() {
 
           { }
           <div className="flex justify-center pt-6 animate-fadeIn" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
+            <div className="w-24 h-1 bg-linear-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ const processSteps = [
 
 export default function ChranbaddhPage() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-emerald-50/40 overflow-hidden">
+    <main className="relative min-h-screen bg-linear-to-br from-stone-50 via-amber-50/30 to-emerald-50/40 overflow-hidden">
       
       {/* Background Effects */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
@@ -78,21 +78,21 @@ export default function ChranbaddhPage() {
           {/* Decorative Top Element */}
           <div className="flex justify-center mb-8 animate-fadeIn">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-12 md:w-16 bg-gradient-to-r from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-[2px] w-12 md:w-16 bg-linear-to-r from-transparent via-emerald-600/50 to-emerald-600" />
               <div className="text-emerald-700">
                 <svg className="w-6 h-6 md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M12 2L7 12h10L12 2z" />
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" opacity="0.4" />
                 </svg>
               </div>
-              <div className="h-[2px] w-12 md:w-16 bg-gradient-to-l from-transparent via-emerald-600/50 to-emerald-600" />
+              <div className="h-[2px] w-12 md:w-16 bg-linear-to-l from-transparent via-emerald-600/50 to-emerald-600" />
             </div>
           </div>
 
           {/* Main Title */}
           <h1 className="space-y-3">
             <div className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-slideUp">
-              <span className="inline-block bg-gradient-to-br from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
+              <span className="inline-block bg-linear-to-br from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
                 TCBT वृक्षायुर्वेद कृषि
               </span>
             </div>
@@ -108,7 +108,7 @@ export default function ChranbaddhPage() {
 
           {/* Decorative Line */}
           <div className="flex justify-center pt-4 animate-fadeIn" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
+            <div className="w-24 h-1 bg-linear-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
           </div>
         </div>
       </section>
@@ -138,13 +138,13 @@ export default function ChranbaddhPage() {
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 animate-slideUp">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-emerald-800 via-green-700 to-emerald-900 bg-clip-text text-transparent">
                 अग्निहोत्र प्रक्रिया
               </span>
             </h2>
             <p className="text-stone-600 text-lg md:text-xl">चरणबद्ध विधि</p>
             <div className="flex justify-center mt-6">
-              <div className="w-20 h-1 bg-gradient-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
+              <div className="w-20 h-1 bg-linear-to-r from-emerald-600/30 via-emerald-600 to-emerald-600/30 rounded-full" />
             </div>
           </div>
 
@@ -157,12 +157,12 @@ export default function ChranbaddhPage() {
                 style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'backwards' }}
               >
                 {/* Step Number Badge */}
-                <div className="absolute top-4 left-4 z-10 w-12 h-12 bg-gradient-to-br from-emerald-600 to-green-700 rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute top-4 left-4 z-10 w-12 h-12 bg-linear-to-br from-emerald-600 to-green-700 rounded-full flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">{step.id}</span>
                 </div>
 
                 {/* Image Container */}
-                <div className="relative h-56 md:h-64 bg-gradient-to-br from-emerald-50 to-green-50 overflow-hidden">
+                <div className="relative h-56 md:h-64 bg-linear-to-br from-emerald-50 to-green-50 overflow-hidden">
                   <img
                     src={step.image}
                     alt={step.title}
@@ -182,7 +182,7 @@ export default function ChranbaddhPage() {
                 </div>
 
                 {/* Decorative Bottom Border */}
-                <div className="h-1 bg-gradient-to-r from-transparent via-emerald-600 to-transparent group-hover:via-green-600 transition-colors duration-500" />
+                <div className="h-1 bg-linear-to-r from-transparent via-emerald-600 to-transparent group-hover:via-green-600 transition-colors duration-500" />
               </div>
             ))}
           </div>
@@ -192,7 +192,7 @@ export default function ChranbaddhPage() {
       {/* Campaign Section */}
       <section className="relative px-4 md:px-6 pb-20 md:pb-32">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-emerald-800 via-green-700 to-emerald-900 rounded-3xl shadow-2xl shadow-emerald-900/20 p-8 md:p-12 text-center animate-fadeIn hover:shadow-3xl hover:shadow-emerald-900/30 transition-all duration-500">
+          <div className="bg-linear-to-br from-emerald-800 via-green-700 to-emerald-900 rounded-3xl shadow-2xl shadow-emerald-900/20 p-8 md:p-12 text-center animate-fadeIn hover:shadow-3xl hover:shadow-emerald-900/30 transition-all duration-500">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -86,7 +86,7 @@ export default function CosmicCreationSection({ data }: { data: CosmicData }) {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-800 mb-4">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mx-auto mb-6" />
+          <div className="w-20 h-1 bg-linear-to-r from-amber-500 to-orange-500 rounded-full mx-auto mb-6" />
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             {data.intro}
           </p>
@@ -158,7 +158,7 @@ export default function CosmicCreationSection({ data }: { data: CosmicData }) {
         </div>
 
         {/* Book CTA */}
-        <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-8 md:p-10 border-2 border-amber-300 text-center mb-8 shadow-md">
+        <div className="bg-linear-to-br from-amber-100 to-orange-100 rounded-2xl p-8 md:p-10 border-2 border-amber-300 text-center mb-8 shadow-md">
           <div className="inline-flex items-center gap-2 mb-4">
             <BookOpen className="w-8 h-8 text-amber-700" />
           </div>

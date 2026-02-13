@@ -41,7 +41,7 @@ function MantraCard({ type, title, mantra, icon }: MantraCardProps) {
 
   return (
     <div
-      className={`relative group bg-gradient-to-br ${gradientClass} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 ${borderClass} overflow-hidden`}
+      className={`relative group bg-linear-to-br ${gradientClass} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 ${borderClass} overflow-hidden`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -50,7 +50,7 @@ function MantraCard({ type, title, mantra, icon }: MantraCardProps) {
         {[...Array(5)].map((_, i) => (
           <div
             key={i}
-            className={`absolute w-full h-1 bg-gradient-to-r ${
+            className={`absolute w-full h-1 bg-linear-to-r ${
               type === "sunrise"
                 ? "from-yellow-400 to-orange-500"
                 : "from-indigo-400 to-purple-500"
@@ -107,7 +107,7 @@ function MantraCard({ type, title, mantra, icon }: MantraCardProps) {
 
       {/* Glow Effect on Hover */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${
+        className={`absolute inset-0 bg-linear-to-br ${
           type === "sunrise"
             ? "from-yellow-300/20 to-orange-300/20"
             : "from-indigo-300/20 to-purple-300/20"

@@ -34,7 +34,7 @@ export default function EnergyFlowSection({ data }: { data: EnergyFlowData }) {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-800 mb-4">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full mx-auto mb-6" />
+          <div className="w-20 h-1 bg-linear-to-r from-emerald-500 to-green-500 rounded-full mx-auto mb-6" />
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
             {data.subtitle}
           </p>

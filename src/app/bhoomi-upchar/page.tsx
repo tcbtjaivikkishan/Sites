@@ -2,11 +2,11 @@ import React from "react";
 
 export default function BhoomiUpcharPage() {
     return (
-        <div className="bg-gradient-to-br from-green-50 via-white to-amber-50 text-gray-800">
+        <div className="bg-linear-to-br from-green-50 via-white to-amber-50 text-gray-800">
 
             {/* Hero Section */}
             <section
-                className="flex items-center justify-center relative bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950 text-white py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden"
+                className="flex items-center justify-center relative bg-linear-to-br from-emerald-950 via-green-900 to-teal-950 text-white py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden"
             >
                 <div className="absolute inset-0 bg-black opacity-10"></div>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -54,7 +54,7 @@ export default function BhoomiUpcharPage() {
                     </div>
 
                     {/* ================= TCBT PROCESS ================= */}
-                    <div className="bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border border-green-200">
+                    <div className="bg-linear-to-br from-emerald-50 via-green-50 to-teal-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border border-green-200">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 sm:mb-8 lg:mb-10 text-center">
                             TCBT भूमि उपचार प्रक्रिया
                         </h2>
@@ -114,7 +114,7 @@ export default function BhoomiUpcharPage() {
                             </p>
                         </div>
 
-                        <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 mt-8 sm:mt-10 border-l-4 border-yellow-500 shadow-xl">
+                        <div className="bg-linear-to-r from-amber-50 to-yellow-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 mt-8 sm:mt-10 border-l-4 border-yellow-500 shadow-xl">
                             <p className="text-gray-800 text-base sm:text-lg lg:text-xl italic leading-relaxed text-center sm:text-left">
                                 ताराचंद बेलजी तकनीक में भूमि का सम्पूर्ण उपचार एक वर्ष में पूर्ण हो जाता है. मिट्टी मख्खन जैसी मुलायम और सौंधी महक वाली हो जाती है, प्रति वर्ग फुट मिट्टी खाने वाले तीन इंडोजेइक केचुए आ जाते है।
                             </p>
@@ -122,7 +122,7 @@ export default function BhoomiUpcharPage() {
                     </div>
 
                     {/* ================= SANSKRIT QUOTE ================= */}
-                    <div className="bg-gradient-to-r from-amber-100 via-yellow-100 to-amber-100 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 text-center border-2 border-yellow-300">
+                    <div className="bg-linear-to-r from-amber-100 via-yellow-100 to-amber-100 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 text-center border-2 border-yellow-300">
                         <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
                             ।। यस्मिन् भूम्याम् जीवा नास्ति, सा भूमि एव नास्ति ।।
                         </p>
@@ -141,7 +141,7 @@ export default function BhoomiUpcharPage() {
                             प्रकृति के जीवन क्रम में जो भी परिवर्तन होता है, वह जीवाणुओं के कारण होता है। जीवाणु ही बीजों को उगाते हैं, बढ़ाते हैं और सभी प्रकार का पोषण देते हैं — और तो और फसलों की सुरक्षा भी करते हैं।
                         </p>
 
-                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-l-4 sm:border-l-8 border-green-600 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg">
+                        <div className="bg-linear-to-br from-green-50 to-emerald-50 border-l-4 sm:border-l-8 border-green-600 rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg">
                             <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-700 mb-2 sm:mb-3">
                                 "जन्तु नाम जीवनम कृषि"
                             </p>
@@ -175,7 +175,7 @@ export default function BhoomiUpcharPage() {
                     </div>
 
                     {/* ================= मिट्टी की समस्याएँ ================= */}
-                    <div className="bg-gradient-to-br from-red-50 via-orange-50 to-red-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border-t-4 border-red-500">
+                    <div className="bg-linear-to-br from-red-50 via-orange-50 to-red-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border-t-4 border-red-500">
                         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 text-center sm:text-left">
                             मिट्टी में तीन तरह की समस्याएँ होती हैं –
                         </h3>
@@ -195,7 +195,7 @@ export default function BhoomiUpcharPage() {
                                     बीज उगाने वाले और पौधों को बढ़ाने वाले जीवाणुओं का न होना। गैर-जैविक खेती के कारण हमारी भूमि में जीवाणु समाप्त हो गए हैं। ये जीवाणु तुरंत नहीं आयेंगे। धीरे-धीरे ये अपनी आप बढ़ेंगे। पर मुसीबत ये है कि इनके बढ़ने से पहले खरपतवार के बीज, सड़े हुए कार्बनिक पदार्थ की उपस्थिति में बढ़ने वाले रोगों के बीजाणु, या फसल के अवशेष इतनी तादात में हैं, जो बीज उगने और बढ़ने नहीं देते। क्यों कि पौधों को खाने वाले कीट जीवाणु जो बीजों को खराब करते हैं, भरे पड़े हैं। इसका तरीका यही है कि इन सूक्ष्म जीवों को बाहर से जमीन में डाला जाये। उसमें भी खरपतवार के बीज खाने वाले जीवाणु, रोग व कीट नाशक जीवाणु भी डालने होंगे।
                                 </p>
 
-                                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-4 sm:p-5 lg:p-6 border-l-4 border-amber-500">
+                                <div className="bg-linear-to-br from-amber-50 to-yellow-50 rounded-xl p-4 sm:p-5 lg:p-6 border-l-4 border-amber-500">
                                     <h5 className="text-base sm:text-lg lg:text-xl font-bold text-amber-700 mb-2 sm:mb-3">उपचार</h5>
                                     <p className="mb-2">हर सिंचाई में 10 लीटर गौमूत्र व 10 लीटर जैव-रसायन प्रति एकड़ दें।</p>
                                     <p className="mb-2">10 बार की सिंचाई में कुल 100 लीटर गौमूत्र व 100 लीटर जैव-रसायन चलाया जाता है।</p>
@@ -259,26 +259,26 @@ export default function BhoomiUpcharPage() {
                         </h3>
 
                         <div className="space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base lg:text-lg">
-                            <p className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 sm:p-5 rounded-xl border-l-4 border-green-500 shadow-sm">
+                            <p className="bg-linear-to-r from-green-50 to-emerald-50 p-4 sm:p-5 rounded-xl border-l-4 border-green-500 shadow-sm">
                                 मिट्टी की ऊर्जा एवं पंच महाभूत की जांच TCBT वृक्षायुर्वेद अभ्यासक से कराएं।
                             </p>
-                            <p className="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 sm:p-5 rounded-xl border-l-4 border-blue-500 shadow-sm">
+                            <p className="bg-linear-to-r from-blue-50 to-cyan-50 p-4 sm:p-5 rounded-xl border-l-4 border-blue-500 shadow-sm">
                                 अपने ट्यूबवेल या सिंचाई स्रोत के पास वने रचूई लगाएँ, 3 ड्रम रखें।
                             </p>
-                            <p className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 sm:p-5 rounded-xl border-l-4 border-amber-500 shadow-sm">
+                            <p className="bg-linear-to-r from-amber-50 to-yellow-50 p-4 sm:p-5 rounded-xl border-l-4 border-amber-500 shadow-sm">
                                 कम्पोस्ट खाद / तिल की हरी खाद की व्यवस्था करें।
                             </p>
-                            <p className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 sm:p-5 rounded-xl border-l-4 border-purple-500 shadow-sm">
+                            <p className="bg-linear-to-r from-purple-50 to-pink-50 p-4 sm:p-5 rounded-xl border-l-4 border-purple-500 shadow-sm">
                                 जैव-रसायन एवं खनिज भस्म बनाने की प्रक्रिया शुरू करें।
                             </p>
-                            <p className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 sm:p-5 rounded-xl border-l-4 border-teal-500 shadow-sm">
+                            <p className="bg-linear-to-r from-teal-50 to-cyan-50 p-4 sm:p-5 rounded-xl border-l-4 border-teal-500 shadow-sm">
                                 जीवाणु किट एवं अग्निहोत्र किट की व्यवस्था करें।
                             </p>
                         </div>
                     </div>
 
                     {/* ================= अतिरिक्त दिशा-निर्देश ================= */}
-                    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border-2 border-blue-200">
+                    <div className="bg-linear-to-br from-blue-50 via-indigo-50 to-blue-50 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-12 mb-6 sm:mb-8 lg:mb-10 border-2 border-blue-200">
                         <div className="space-y-4 sm:space-y-5 text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">
                             <p className="text-justify bg-white bg-opacity-60 p-4 sm:p-5 rounded-xl border-l-4 border-blue-500 shadow-sm">
                                 मिट्टी की जाँच रिपोर्ट में कार्बन तत्व की मात्रा 0.5% से कम आने पर 20–25 क्विंटल कम्पोस्ट खाद प्रति एकड़ डालनी है, या हरी खाद के लिए 2 किलो तिल को बोकर 35 दिन बाद जमीन में मिलाना है।
@@ -295,7 +295,7 @@ export default function BhoomiUpcharPage() {
                     </div>
 
                     {/* ================= सावधानिया ================= */}
-                    <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 text-gray-800 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-14 space-y-6 sm:space-y-8 border-2 border-emerald-200">
+                    <div className="bg-linear-to-br from-green-50 via-emerald-50 to-green-50 text-gray-800 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 lg:p-14 space-y-6 sm:space-y-8 border-2 border-emerald-200">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wide mb-4 sm:mb-6 text-emerald-800 text-center">
                             घूरे की गोबर खाद (FVM) संबंधित सावधानिया
                         </h2>

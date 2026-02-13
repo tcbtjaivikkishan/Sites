@@ -54,7 +54,7 @@ export default function ManureCycleSection({
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-800 mb-4">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full mx-auto" />
+          <div className="w-20 h-1 bg-linear-to-r from-amber-500 to-yellow-500 rounded-full mx-auto" />
         </div>
 
         {/* Main Diagram */}
@@ -175,7 +175,7 @@ export default function ManureCycleSection({
 
             <div className="p-6 md:p-8 bg-white border-t border-green-100 space-y-4">
               {/* Time Note */}
-              <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl p-4 flex items-center gap-3">
+              <div className="bg-linear-to-r from-green-600 to-emerald-600 text-white rounded-xl p-4 flex items-center gap-3">
                 <Clock className="w-5 h-5" />
                 <p className="font-medium">{data.solution.timeNote}</p>
               </div>

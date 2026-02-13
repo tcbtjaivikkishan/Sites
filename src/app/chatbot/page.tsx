@@ -3,7 +3,7 @@ import { Sprout, MessageCircle, Sparkles } from "lucide-react";
 
 export default function ChatPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-200/30 rounded-full blur-3xl" />
@@ -23,7 +23,7 @@ export default function ChatPage() {
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900">
             जैविक खेती का
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mt-2">
+            <span className="block text-transparent bg-clip-text bg-linear-to-r from-green-600 to-emerald-600 mt-2">
               भरोसेमंद साथी
             </span>
           </h1>
@@ -93,7 +93,7 @@ function FeatureCard({
 }) {
   return (
     <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl hover:scale-105 transition-all duration-300">
-      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white mb-4 shadow-lg">
+      <div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white mb-4 shadow-lg">
         {icon}
       </div>
       <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>

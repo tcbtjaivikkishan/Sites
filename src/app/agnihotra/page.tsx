@@ -5,7 +5,7 @@ import MantraCards from "@/components/agnihotra/Mantracards";
 
 export default function AgnihotraPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-green-50 to-yellow-50">
+    <div className="min-h-screen bg-linear-to-br from-amber-50 via-green-50 to-yellow-50">
       {/* HERO SECTION */}
       <HeroSection />
       
@@ -29,12 +29,12 @@ export default function AgnihotraPage() {
         <ScrollReveal direction="up">
           <div className="relative">
             {/* Decorative Corner Elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full opacity-20 blur-2xl"></div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full opacity-20 blur-2xl"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-linear-to-br from-amber-400 to-orange-500 rounded-full opacity-20 blur-2xl"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-linear-to-br from-green-400 to-emerald-500 rounded-full opacity-20 blur-2xl"></div>
             
             <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border-2 border-amber-200 overflow-hidden">
               {/* Top Accent Bar */}
-              <div className="h-2 bg-gradient-to-r from-green-500 via-amber-500 to-orange-500"></div>
+              <div className="h-2 bg-linear-to-r from-green-500 via-amber-500 to-orange-500"></div>
               
               {/* Decorative Pattern Overlay */}
               <div className="absolute top-0 right-0 w-64 h-64 opacity-5">
@@ -49,10 +49,10 @@ export default function AgnihotraPage() {
               
               <div className="relative p-8 sm:p-12">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12">
+                  <div className="w-16 h-16 bg-linear-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12">
                     <span className="text-3xl transform -rotate-12">🔥</span>
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-green-700 via-amber-600 to-orange-600 bg-clip-text text-transparent">
+                  <h2 className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-green-700 via-amber-600 to-orange-600 bg-clip-text text-transparent">
                     अग्निहोत्र क्या है
                   </h2>
                 </div>
@@ -80,9 +80,9 @@ export default function AgnihotraPage() {
 
         {/* IMAGE GALLERY - Enhanced Container */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-green-400/10 via-amber-400/10 to-orange-400/10 rounded-3xl blur-3xl"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-green-400/10 via-amber-400/10 to-orange-400/10 rounded-3xl blur-3xl"></div>
           <ScrollReveal direction="zoom">
-            <div className="relative bg-gradient-to-br from-white to-green-50/50 rounded-3xl shadow-2xl border-2 border-green-200 p-6 sm:p-8">
+            <div className="relative bg-linear-to-br from-white to-green-50/50 rounded-3xl shadow-2xl border-2 border-green-200 p-6 sm:p-8">
               <AgnihotraSteps />
             </div>
           </ScrollReveal>
@@ -91,9 +91,9 @@ export default function AgnihotraPage() {
         {/* BLOCK 2 - Enhanced Agriculture Card */}
         <ScrollReveal direction="left">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl shadow-xl border-2 border-amber-300 overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300">
-              <div className="h-1.5 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-amber-400 to-orange-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative bg-linear-to-br from-amber-50 to-orange-50 rounded-3xl shadow-xl border-2 border-amber-300 overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300">
+              <div className="h-1.5 bg-linear-to-r from-amber-500 via-orange-500 to-amber-500"></div>
               
               {/* Field Pattern Background */}
               <div className="absolute top-0 left-0 w-full h-full opacity-5">
@@ -131,9 +131,9 @@ export default function AgnihotraPage() {
         {/* BLOCK 3 - Enhanced Process Card */}
         <ScrollReveal direction="right">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-green-400 to-emerald-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
             <div className="relative bg-white rounded-3xl shadow-xl border-2 border-green-200 overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300">
-              <div className="h-1.5 bg-gradient-to-r from-green-500 via-emerald-500 to-green-500"></div>
+              <div className="h-1.5 bg-linear-to-r from-green-500 via-emerald-500 to-green-500"></div>
               
               <div className="p-8 sm:p-12 space-y-6">
                 <div className=" items-start gap-4">
@@ -147,7 +147,7 @@ export default function AgnihotraPage() {
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border-l-4 border-green-500">
+                <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border-l-4 border-green-500">
                   <div className=" items-start gap-4">
                     <p className="text-lg leading-relaxed text-gray-800 flex-1">
                       एक टुकड़ा चौकोर तोड़कर अग्निहोत्र पात्र की पेंदी में जमा दें। बाकि कं
@@ -158,7 +158,7 @@ export default function AgnihotraPage() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border-l-4 border-amber-500">
+                <div className="bg-linear-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border-l-4 border-amber-500">
                   <div className=" items-start gap-4">
                     <p className="text-lg leading-relaxed text-gray-800 flex-1">
                       3 मिनट पहले दो चुटकी चावल और एक बूंद घी बाएं हथेली में रकखर और
@@ -176,7 +176,7 @@ export default function AgnihotraPage() {
 
         {/* MANTRAS - Interactive Cards */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-400/10 via-amber-400/10 to-green-400/10 rounded-3xl blur-3xl"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-orange-400/10 via-amber-400/10 to-green-400/10 rounded-3xl blur-3xl"></div>
           <div className="relative">
             <MantraCards />
           </div>
@@ -185,13 +185,13 @@ export default function AgnihotraPage() {
         {/* Meditation Card - Enhanced */}
         <ScrollReveal direction="up">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-indigo-500 rounded-3xl blur-xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
-            <div className="relative bg-gradient-to-br from-purple-50 via-white to-indigo-50 rounded-3xl shadow-xl border-2 border-purple-200 overflow-hidden">
-              <div className="h-1.5 bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-500"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-purple-400 to-indigo-500 rounded-3xl blur-xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
+            <div className="relative bg-linear-to-br from-purple-50 via-white to-indigo-50 rounded-3xl shadow-xl border-2 border-purple-200 overflow-hidden">
+              <div className="h-1.5 bg-linear-to-r from-purple-500 via-indigo-500 to-purple-500"></div>
               
               <div className="p-8 sm:p-12">
                 <div className="flex items-start gap-4">
-                    <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-700 to-indigo-700 bg-clip-text text-transparent mb-4">
+                    <h3 className="text-2xl font-bold bg-linear-to-r from-purple-700 to-indigo-700 bg-clip-text text-transparent mb-4">
                       ध्यान और भस्म संरक्षण
                     </h3>
                     <p className="text-lg leading-relaxed text-gray-800">
@@ -212,21 +212,21 @@ export default function AgnihotraPage() {
         {/* Ingredients Table Card - Enhanced */}
         <ScrollReveal direction="zoom">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-3xl blur-xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-blue-400 to-cyan-500 rounded-3xl blur-xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
             <div className="relative bg-white rounded-3xl shadow-2xl border-2 border-blue-200 overflow-hidden">
-              <div className="h-2 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500"></div>
+              <div className="h-2 bg-linear-to-r from-blue-500 via-cyan-500 to-blue-500"></div>
               
               <div className="p-8 sm:p-12">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-linear-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg">
                     <span className="text-3xl">💧</span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent">
+                  <h3 className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent">
                     सामग्री स्प्रे के लिए सिंचाई के साथ
                   </h3>
                 </div>
                 
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 sm:p-8 border border-blue-200">
+                <div className="bg-linear-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 sm:p-8 border border-blue-200">
                   <div className="overflow-x-auto">
                     <table className="w-full text-left text-lg">
                       <thead>
@@ -257,10 +257,10 @@ export default function AgnihotraPage() {
         {/* Madhav Ashram Section - Enhanced */}
         <ScrollReveal direction="up">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-300 via-orange-400 to-amber-300 rounded-3xl blur-2xl opacity-20"></div>
-            <div className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-3xl shadow-2xl border-4 border-amber-300 overflow-hidden">
+            <div className="absolute inset-0 bg-linear-to-r from-amber-300 via-orange-400 to-amber-300 rounded-3xl blur-2xl opacity-20"></div>
+            <div className="relative bg-linear-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-3xl shadow-2xl border-4 border-amber-300 overflow-hidden">
               {/* Decorative Top Pattern */}
-              <div className="h-3 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500"></div>
+              <div className="h-3 bg-linear-to-r from-amber-500 via-orange-500 to-amber-500"></div>
               
               {/* Ornamental Background */}
               <div className="absolute top-0 left-0 w-full h-full opacity-5">
@@ -274,17 +274,17 @@ export default function AgnihotraPage() {
               <div className="relative p-8 sm:p-16">
                 {/* Header with Om Symbol */}
                 <div className="flex flex-col items-center mb-10">
-                  <div className="w-24 h-24 bg-gradient-to-br from-amber-400 via-orange-500 to-amber-600 rounded-full flex items-center justify-center shadow-2xl mb-6 transform hover:scale-110 transition-transform duration-300">
+                  <div className="w-24 h-24 bg-linear-to-br from-amber-400 via-orange-500 to-amber-600 rounded-full flex items-center justify-center shadow-2xl mb-6 transform hover:scale-110 transition-transform duration-300">
                     <span className="text-5xl text-white font-bold">ॐ</span>
                   </div>
                   
                   <h2 className="text-3xl sm:text-5xl font-bold text-center mb-3">
-                    <span className="bg-gradient-to-r from-orange-700 via-amber-600 to-orange-700 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-orange-700 via-amber-600 to-orange-700 bg-clip-text text-transparent">
                       अग्निहोत्र का प्रस्फुटन केन्द्र
                     </span>
                   </h2>
                   
-                  <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent rounded-full mb-4"></div>
+                  <div className="w-32 h-1 bg-linear-to-r from-transparent via-amber-500 to-transparent rounded-full mb-4"></div>
                   
                   <h3 className="text-2xl sm:text-3xl font-semibold text-orange-800 text-center">
                     माधव आश्रम, बैरागढ़ भोपाल
@@ -312,12 +312,12 @@ export default function AgnihotraPage() {
 
                   {/* Info Tags */}
                   <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                    <div className="bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl px-8 py-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-linear-to-r from-amber-400 to-orange-500 rounded-2xl px-8 py-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
                       <span className="font-bold text-white text-lg">
                         माधव आश्रम ट्रस्ट ऑफिशियल
                       </span>
                     </div>
-                    <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl px-8 py-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div className="bg-linear-to-r from-green-500 to-emerald-600 rounded-2xl px-8 py-4 shadow-lg transform hover:scale-105 transition-transform duration-300">
                       <span className="font-bold text-white text-lg">
                         22 फरवरी 1963
                       </span>
@@ -327,7 +327,7 @@ export default function AgnihotraPage() {
               </div>
               
               {/* Decorative Bottom Pattern */}
-              <div className="h-3 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500"></div>
+              <div className="h-3 bg-linear-to-r from-amber-500 via-orange-500 to-amber-500"></div>
             </div>
           </div>
         </ScrollReveal>
@@ -338,9 +338,9 @@ export default function AgnihotraPage() {
           {/* Agriculture Revolution */}
           <ScrollReveal direction="left">
             <div className="relative group h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-green-400 to-emerald-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <div className="relative h-full bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-green-200 transform group-hover:scale-[1.02] transition-transform duration-300">
-                <div className="h-2 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600"></div>
+                <div className="h-2 bg-linear-to-r from-green-500 via-emerald-500 to-green-600"></div>
                 
                 {/* Farm Pattern Background */}
                 <div className="absolute top-0 right-0 w-48 h-48 opacity-5">
@@ -352,10 +352,10 @@ export default function AgnihotraPage() {
                 
                 <div className="relative p-8 sm:p-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 bg-linear-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
                       <span className="text-4xl">🌱</span>
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-green-700 to-emerald-700 bg-clip-text text-transparent">
+                    <h2 className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-green-700 to-emerald-700 bg-clip-text text-transparent">
                       अग्निहोत्र कृषि क्रांत
                     </h2>
                   </div>
@@ -386,12 +386,12 @@ export default function AgnihotraPage() {
 
                   {/* Stats Cards */}
                   <div className="mt-8 grid grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center border-2 border-green-200 transform hover:scale-105 transition-transform duration-300">
-                      <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">90%</div>
+                    <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center border-2 border-green-200 transform hover:scale-105 transition-transform duration-300">
+                      <div className="text-4xl font-bold bg-linear-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">90%</div>
                       <div className="text-sm font-semibold text-gray-700 mt-2">रोग नियंत्रण</div>
                     </div>
-                    <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 text-center border-2 border-amber-200 transform hover:scale-105 transition-transform duration-300">
-                      <div className="text-4xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">38+</div>
+                    <div className="bg-linear-to-br from-amber-50 to-orange-50 rounded-2xl p-6 text-center border-2 border-amber-200 transform hover:scale-105 transition-transform duration-300">
+                      <div className="text-4xl font-bold bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">38+</div>
                       <div className="text-sm font-semibold text-gray-700 mt-2">फसलें</div>
                     </div>
                   </div>
@@ -403,9 +403,9 @@ export default function AgnihotraPage() {
           {/* Human Health */}
           <ScrollReveal direction="right">
             <div className="relative group h-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-amber-400 to-orange-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <div className="relative h-full bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-amber-200 transform group-hover:scale-[1.02] transition-transform duration-300">
-                <div className="h-2 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600"></div>
+                <div className="h-2 bg-linear-to-r from-amber-500 via-orange-500 to-amber-600"></div>
                 
                 {/* Health Pattern Background */}
                 <div className="absolute top-0 right-0 w-48 h-48 opacity-5">
@@ -417,10 +417,10 @@ export default function AgnihotraPage() {
                 
                 <div className="relative p-8 sm:p-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 bg-linear-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
                       <span className="text-4xl">💚</span>
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-amber-700 to-orange-700 bg-clip-text text-transparent">
+                    <h2 className="text-2xl sm:text-3xl font-bold bg-linear-to-r from-amber-700 to-orange-700 bg-clip-text text-transparent">
                       अग्निहोत्र से मानव स्वास्थ
                     </h2>
                   </div>
@@ -446,7 +446,7 @@ export default function AgnihotraPage() {
                   </div>
 
                   {/* Health Tip Card */}
-                  <div className="mt-8 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 border-l-4 border-amber-500 shadow-lg">
+                  <div className="mt-8 bg-linear-to-r from-amber-50 to-orange-50 rounded-2xl p-6 border-l-4 border-amber-500 shadow-lg">
                     <div className="flex items-start gap-3">
                       <span className="text-3xl flex-shrink-0">💧</span>
                       <div>
@@ -465,9 +465,9 @@ export default function AgnihotraPage() {
 
         {/* Bottom Decorative Element */}
         <div className="flex justify-center items-center gap-3 py-8">
-          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
           <div className="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></div>
-          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-transparent via-orange-500 to-transparent rounded-full"></div>
         </div>
       </div>
     </div>

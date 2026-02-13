@@ -82,7 +82,7 @@ export default function ElementsShowcase({ elements }: ElementsShowcaseProps) {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-8 mx-auto w-32 h-1 bg-gradient-to-r from-green-400 via-emerald-500 to-green-400 rounded-full"
+          className="mt-8 mx-auto w-32 h-1 bg-linear-to-r from-green-400 via-emerald-500 to-green-400 rounded-full"
         />
       </div>
 
@@ -108,13 +108,13 @@ export default function ElementsShowcase({ elements }: ElementsShowcaseProps) {
             >
               <div className="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border-2 border-stone-100 hover:border-green-400 h-full">
                 {/* Gradient overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-stone-50/50 pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-br from-white via-transparent to-stone-50/50 pointer-events-none" />
                 
                 {/* Animated corner accent */}
                 <div className={`absolute top-0 right-0 w-32 h-32 ${scheme.gradient} opacity-10 rounded-bl-full transition-all duration-500 group-hover:scale-150`} />
 
                 {/* Header with pattern */}
-                <div className={`relative p-8 pb-6 bg-gradient-to-br ${scheme.gradient} overflow-hidden`}>
+                <div className={`relative p-8 pb-6 bg-linear-to-br ${scheme.gradient} overflow-hidden`}>
                   {/* Pattern overlay */}
                   <div className="absolute inset-0 opacity-10">
                     <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -165,8 +165,8 @@ export default function ElementsShowcase({ elements }: ElementsShowcaseProps) {
 
                   {/* Description card with gradient border */}
                   <div className="relative">
-                    <div className={`absolute inset-0 bg-gradient-to-r ${scheme.gradient} rounded-xl blur-sm opacity-20`} />
-                    <div className="relative bg-gradient-to-br from-stone-50 to-white rounded-xl p-5 border-2 border-stone-100">
+                    <div className={`absolute inset-0 bg-linear-to-r ${scheme.gradient} rounded-xl blur-sm opacity-20`} />
+                    <div className="relative bg-linear-to-br from-stone-50 to-white rounded-xl p-5 border-2 border-stone-100">
                       <div className={`absolute top-2 left-2 w-2 h-2 rounded-full ${scheme.dot} animate-pulse`} />
                       <p className="text-sm sm:text-base text-stone-700 line-clamp-3 leading-relaxed pl-4">
                         {element.products[0]}
@@ -216,7 +216,7 @@ export default function ElementsShowcase({ elements }: ElementsShowcaseProps) {
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Modal Header */}
-                <div className={`relative p-10 bg-gradient-to-br ${scheme.gradient} overflow-hidden`}>
+                <div className={`relative p-10 bg-linear-to-br ${scheme.gradient} overflow-hidden`}>
                   {/* Pattern overlay */}
                   <div className="absolute inset-0 opacity-10">
                     <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">

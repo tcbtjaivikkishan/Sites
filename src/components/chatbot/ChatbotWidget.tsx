@@ -8,6 +8,7 @@ import {
   fetchChats,
 } from "@/store/slices/chat/chatThunks";
 import { RootState } from "@/store";
+import { setToken } from "@/store/slices/chat/chatSlice";
 import {
   Send,
   MessageCircle,
@@ -38,16 +39,23 @@ export default function ChatbotWidget({
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const prevMessageCountRef = useRef<number>(messages.length);
 
-  /* ---------------- Session init ---------------- */
+
   useEffect(() => {
-    if (!token) {
-      dispatch(createSession()).then(() => {
-        dispatch(fetchChats());
-      });
+    const savedToken = localStorage.getItem("chatToken");
+
+    if (!token && savedToken) {
+      dispatch(setToken(savedToken));
+      dispatch(fetchChats());
+    }
+    else if (!token && !savedToken) {
+      dispatch(createSession());
+    }
+    else if (token) {
+      dispatch(fetchChats());
     }
   }, [token, dispatch]);
 
-  /* ---------------- Optimized auto scroll ---------------- */
+
   useEffect(() => {
     if (messages.length > prevMessageCountRef.current) {
       messagesEndRef.current?.scrollIntoView({
@@ -71,7 +79,7 @@ export default function ChatbotWidget({
     }
   };
 
-  /* ================= FLOATING WIDGET ================= */
+
   if (!isFullPage) {
     return (
       <>
@@ -99,12 +107,12 @@ export default function ChatbotWidget({
           )}
         </AnimatePresence>
 
-        {/* Floating Button */}
+        { }
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen((p) => !p)}
-          className="fixed bottom-6 right-4 sm:right-6 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full shadow-2xl flex items-center justify-center text-white z-50"
+          className="fixed bottom-6 right-4 sm:right-6 w-14 h-14 sm:w-16 sm:h-16 bg-linear-to-br from-green-500 to-emerald-600 rounded-full shadow-2xl flex items-center justify-center text-white z-50"
         >
           <AnimatePresence mode="wait">
             {isOpen ? (
@@ -136,7 +144,7 @@ export default function ChatbotWidget({
     );
   }
 
-  /* ================= FULL PAGE ================= */
+
   return (
     <div className="h-[600px] flex flex-col">
       <ChatContent
@@ -153,7 +161,7 @@ export default function ChatbotWidget({
   );
 }
 
-/* ================= CHAT CONTENT ================= */
+
 
 interface ChatContentProps {
   messages: { role: "user" | "assistant"; message: string }[];
@@ -186,8 +194,8 @@ function ChatContent({
 
   return (
     <>
-      {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-4 rounded-t-3xl">
+      { }
+      <div className="bg-linear-to-r from-green-600 to-emerald-600 p-4 rounded-t-3xl">
         <div className="flex justify-between items-center">
           <h2 className="text-white font-bold flex items-center gap-2">
             TCBT जैविक किसान <Sparkles className="w-4 h-4 text-yellow-300" />
@@ -200,7 +208,7 @@ function ChatContent({
         </div>
       </div>
 
-      {/* Messages */}
+      { }
       <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
         {messages.length === 0 ? (
           <div className="text-center space-y-4">
@@ -221,16 +229,14 @@ function ChatContent({
           messages.map((m, i) => (
             <div
               key={i}
-              className={`flex mb-3 ${
-                m.role === "user" ? "justify-end" : "justify-start"
-              }`}
+              className={`flex mb-3 ${m.role === "user" ? "justify-end" : "justify-start"
+                }`}
             >
               <div
-                className={`max-w-[75%] p-3 rounded-2xl text-sm ${
-                  m.role === "user"
+                className={`max-w-[75%] p-3 rounded-2xl text-sm ${m.role === "user"
                     ? "bg-green-600 text-white"
                     : "bg-white border"
-                }`}
+                  }`}
               >
                 {m.message}
               </div>
@@ -248,7 +254,7 @@ function ChatContent({
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input */}
+      { }
       <div className="p-4 border-t bg-white rounded-b-3xl">
         <div className="flex gap-2">
           <textarea

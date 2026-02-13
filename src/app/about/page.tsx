@@ -44,12 +44,6 @@ export default function AboutPage() {
                 linkedin: "https://linkedin.com/in/example2",
             },
             {
-                name: "Harsh Belji",
-                role: "Chief Operating Officer",
-                image: "/Our-team/Harsh.jpeg",
-                linkedin: "https://linkedin.com/in/example3",
-            },
-            {
                 name: "Navjyot Nashine",
                 role: "Chief Executive Officer",
                 image: "/Our-team/CEO.jpeg",

@@ -29,13 +29,13 @@ export default function HeroSection({ data }: { data: HeroData }) {
 
       {/* Decorative Divider */}
       <div className="flex justify-center items-center gap-3 mb-10">
-        <div className="h-px w-16 bg-gradient-to-r from-transparent via-green-600 to-transparent" />
+        <div className="h-px w-16 bg-linear-to-r from-transparent via-green-600 to-transparent" />
         <div className="flex gap-2">
           <div className="w-2 h-2 rounded-full bg-green-600" />
           <div className="w-2 h-2 rounded-full bg-amber-500" />
           <div className="w-2 h-2 rounded-full bg-stone-600" />
         </div>
-        <div className="h-px w-16 bg-gradient-to-r from-transparent via-green-600 to-transparent" />
+        <div className="h-px w-16 bg-linear-to-r from-transparent via-green-600 to-transparent" />
       </div>
 
       {/* CTA */}

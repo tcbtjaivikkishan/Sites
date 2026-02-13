@@ -14,7 +14,7 @@ export default function FiveElementsPage() {
   return (
     <main className="min-h-screen bg-stone-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#f5f1e8] via-white to-green-50">
+      <section className="relative overflow-hidden bg-linear-to-br from-[#f5f1e8] via-white to-green-50">
         {/* Subtle agricultural pattern */}
         <div className="absolute inset-0 opacity-[0.04]">
           <div className="absolute inset-0" style={{
@@ -60,13 +60,13 @@ export default function FiveElementsPage() {
 
             {/* Decorative divider */}
             <div className="mt-12 flex justify-center items-center gap-3">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-green-600 to-transparent" />
+              <div className="h-px w-12 bg-linear-to-r from-transparent via-green-600 to-transparent" />
               <div className="flex gap-2">
                 <div className="w-2 h-2 rounded-full bg-green-700" />
                 <div className="w-2 h-2 rounded-full bg-[#c4a574]" />
                 <div className="w-2 h-2 rounded-full bg-stone-800" />
               </div>
-              <div className="h-px w-12 bg-gradient-to-r from-transparent via-green-600 to-transparent" />
+              <div className="h-px w-12 bg-linear-to-r from-transparent via-green-600 to-transparent" />
             </div>
           </div>
         </div>

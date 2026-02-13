@@ -22,7 +22,7 @@ export default function IntroSection({ data }: { data: IntroData }) {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-800 mb-4">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mx-auto" />
+          <div className="w-20 h-1 bg-linear-to-r from-green-500 to-emerald-500 rounded-full mx-auto" />
         </div>
 
         {/* Main Content Card */}
@@ -32,7 +32,7 @@ export default function IntroSection({ data }: { data: IntroData }) {
           </p>
 
           {/* Warning Card */}
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6 md:p-8 border-l-4 border-red-500 mb-6">
+          <div className="bg-linear-to-br from-red-50 to-orange-50 rounded-xl p-6 md:p-8 border-l-4 border-red-500 mb-6">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
                 <AlertTriangle className="w-6 h-6 text-red-600" />
@@ -49,7 +49,7 @@ export default function IntroSection({ data }: { data: IntroData }) {
           </div>
 
           {/* Tech Card */}
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 md:p-8 border-l-4 border-green-600">
+          <div className="bg-linear-to-br from-green-50 to-emerald-50 rounded-xl p-6 md:p-8 border-l-4 border-green-600">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
                 <Sparkles className="w-6 h-6 text-green-600" />
