@@ -12,7 +12,7 @@ const testimonials = [
       "श्री बाला साहेब माने, सतारा, महाराष्ट्र",
   },
   {
-    image: '/farmers/optimized_nikhil rajka_200x184.webp',
+    image: '/farmers/nikhil_rajka.webp',
     title: "1.25 एकड़ से 3 लाख रुपये वार्षिक आय",
     text:
       "अब मैं गर्व से जैविक किसान हूँ। मिट्टी की गुणवत्ता भी सुधरी है।",

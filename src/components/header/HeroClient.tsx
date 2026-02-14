@@ -83,7 +83,7 @@ export default function AnimatedHero({ images }: Props) {
         >
           स्वागत है
           <br />
-          <span className="bg-linear-to-r from-green-400 to-emerald-300 bg-clip-text text-transparent">
+          <span className="bg-green-600 hover:bg-green-700 bg-clip-text text-transparent">
             TCBT जैविक किसान
           </span>
         </motion.h1>
@@ -103,21 +103,7 @@ export default function AnimatedHero({ images }: Props) {
             <Link href="https://products.tcbtjaivikkisan.com">
               <span className="flex items-center">
                 <ArrowRight className="mr-2" />
-                अभी शुरू करें
-              </span>
-            </Link>
-          </Button>
-
-          <Button
-            size="lg"
-            variant="outline"
-            className="bg-white/10 text-white border-white/40 rounded-full px-8 py-6 text-lg"
-            asChild
-          >
-            <Link href="/chatbot">
-              <span className="flex items-center">
-                <ArrowRight className="mr-2" />
-                चैटबॉट से बात करें
+                उत्पाद के लिए क्लिक करें
               </span>
             </Link>
           </Button>
