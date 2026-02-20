@@ -119,7 +119,7 @@ export default function ChranbaddhPage() {
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl shadow-emerald-900/5 p-6 md:p-10 border border-emerald-100/50 animate-fadeIn hover:shadow-2xl hover:shadow-emerald-900/10 transition-all duration-500">
             <div className="prose prose-lg max-w-none">
               <p className="text-base md:text-lg text-stone-700 leading-relaxed text-justify">
-                राचंद बेलजी तकनीक वृक्षायुर्वेद कृषि प्रकृति के ऊर्जा विज्ञान एवं
+                ताराचंद बेलजी तकनीक वृक्षायुर्वेद कृषि प्रकृति के ऊर्जा विज्ञान एवं
                 पंचमहाभूतों के व्यवस्था विज्ञान पर आधारित है। यह तकनीक <span className="font-semibold text-emerald-800">पंचमहाभूत
                 (भूमि, गगन, वायु, अग्नि, नीर)</span> को शुद्ध, सजीव, संस्कारित करते हुए फसलों
                 की स्वयं पोषी-स्वयं विकासी-स्वयं पूर्ण व्यवस्था को स्थापित करती है।

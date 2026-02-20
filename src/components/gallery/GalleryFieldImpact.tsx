@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import GalleryCard from "./GalleryCard";
 import VideoCard from "./VideoCard";
 
@@ -23,7 +24,7 @@ interface GalleryFieldImpactData {
 export default function GalleryFieldImpact({ data }: { data: GalleryFieldImpactData }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-green-50">
-      
+
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-emerald-600 to-green-700 text-white py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center space-y-6">
@@ -38,7 +39,7 @@ export default function GalleryFieldImpact({ data }: { data: GalleryFieldImpactD
       </div>
 
       <div className="max-w-7xl mx-auto py-16 px-4 md:px-8 space-y-20">
-        
+
         {/* Images Gallery Section */}
         <section>
           <div className="text-center mb-12">
@@ -81,9 +82,9 @@ export default function GalleryFieldImpact({ data }: { data: GalleryFieldImpactD
           <p className="text-emerald-50 text-lg mb-8 max-w-2xl mx-auto">
             हमारे साथ जुड़कर प्राकृतिक खेती की यात्रा शुरू करें और अपनी खेती को बदलें
           </p>
-          <button className="bg-white text-emerald-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-emerald-50 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+          <Link href="https://products.tcbtjaivikkisan.com" className="bg-white text-emerald-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-emerald-50 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
             अभी जुड़ें
-          </button>
+          </Link>
         </section>
 
       </div>

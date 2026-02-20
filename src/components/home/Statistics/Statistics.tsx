@@ -1,4 +1,4 @@
-import AnimatedStats from '../client/AnimatedStats'
+import AnimatedStats from './AnimatedStats'
 import PeopleIcon from '@mui/icons-material/People'
 import AgricultureIcon from '@mui/icons-material/Agriculture'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'

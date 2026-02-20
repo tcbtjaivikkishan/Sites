@@ -44,7 +44,7 @@ export default function AnimatedHero({ images }: Props) {
   }
 
   return (
-    <div className="relative h-150 lg:h-screen overflow-hidden">
+    <div className="relative h-[60vh] lg:h-[80vh] overflow-hidden">
       { }
       <motion.div className="absolute inset-0" style={{ scale }}>
         <AnimatePresence mode="wait">

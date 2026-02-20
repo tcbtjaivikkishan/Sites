@@ -31,7 +31,7 @@ export default function Header() {
 
         { name: "Success Stories", href: "/success-stories" },
         { name: "TCBT Science", href: "/tcbt-science" },
-        { name: "TCBT Farming Methodology", href: "/tcbt-farming-methodology" },
+        { name: "TCBT Farming Methodology", href: "/farming-methodology" },
         { name: "Gallery & Field Impact", href: "/gallery-field-impact" }
       ]
     },

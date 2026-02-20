@@ -1,9 +1,9 @@
 import Hero from '@/components/header/hero'
-import Statistics from '@/components/home/server/Statistics'
+import Statistics from '@/components/home/Statistics/Statistics'
 import { Badge } from '@/components/ui/badge'
 import Testimonials from '@/components/home/testimonials/Testimonials'
 import Image from 'next/image'
-import PanchMahabhut from '@/components/home/server/PanchMahabhut'
+import PanchMahabhut from '@/components/home/PanchMahabhut'
 
 export default async function Home() {
   await new Promise(resolve => setTimeout(resolve, 3000));
@@ -11,17 +11,13 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      <Statistics />
-
       <section className="relative py-20 md:py-28 bg-linear-to-br from-emerald-50 via-white to-green-50 overflow-hidden">
 
-        { }
         <div className="absolute -top-32 -left-32 w-100 h-100 bg-emerald-200/40 rounded-full blur-3xl -z-10" />
         <div className="absolute -bottom-32 -right-32 w-100 h-100 bg-green-200/40 rounded-full blur-3xl -z-10" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-12">
 
-          { }
           <div className="text-center mb-16">
             <Badge className="mb-6 text-green-700 bg-green-100 px-5 py-2 text-sm tracking-wide">
               प्रकृति पंच महाभूत
@@ -40,17 +36,14 @@ export default async function Home() {
               स्वतः सक्रिय हो जाती है।
             </p>
 
-            { }
             <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-green-100">
               पंचमहाभूत अर्थात पांच महाजीव (भूमि गगन वायु अग्नि नीर) जिन्होंने इस धरती में जीवन की विशाल रचना खड़ी की जिसे हम आज प्रकृति कहते हैं।
               प्रकृति निर्माण की रचना में -
             </p>
           </div>
 
-          { }
           <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-            { }
             <div className="relative group">
               <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
                 <Image
@@ -61,7 +54,6 @@ export default async function Home() {
                 />
               </div>
 
-              { }
               <div className="absolute inset-0 rounded-3xl border-4 border-emerald-400/30 group-hover:border-emerald-500/60 transition-all duration-500"></div>
             </div>
 
@@ -97,13 +89,11 @@ export default async function Home() {
 
       <section className="relative overflow-hidden py-16 md:py-24 bg-linear-to-br from-green-50 via-lime-50 to-emerald-100">
 
-        { }
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-green-200 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-300 rounded-full blur-3xl opacity-30"></div>
 
         <div className="relative max-w-6xl mx-auto px-4">
 
-          { }
           <div className="text-center mb-12 md:mb-16">
             <p className="text-xs tracking-[0.35em] uppercase font-semibold text-green-600">
               HOW IT WORKS
@@ -117,15 +107,9 @@ export default async function Home() {
             </p>
           </div>
 
-          { }
           <div className="relative">
-
-            { }
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-linear-to-b from-green-400 to-emerald-600 rounded-full"></div>
-
             <div className="space-y-12">
-
-              { }
               <div className="relative md:flex md:items-center md:justify-between">
                 <div className="md:w-5/12 bg-white shadow-xl rounded-2xl p-6 border border-green-100 hover:shadow-2xl transition">
                   <p className="text-xs uppercase tracking-[0.3em] text-green-600 font-semibold mb-2">
@@ -148,7 +132,6 @@ export default async function Home() {
                 <div className="md:w-5/12"></div>
               </div>
 
-              { }
               <div className="relative md:flex md:items-center md:justify-between">
                 <div className="md:w-5/12"></div>
 
@@ -170,7 +153,6 @@ export default async function Home() {
                 </div>
               </div>
 
-              { }
               <div className="relative md:flex md:items-center md:justify-between">
                 <div className="md:w-5/12 bg-white shadow-xl rounded-2xl p-6 border border-green-100 hover:shadow-2xl transition">
                   <p className="text-xs uppercase tracking-[0.3em] text-green-600 font-semibold mb-2">
@@ -192,7 +174,6 @@ export default async function Home() {
                 <div className="md:w-5/12"></div>
               </div>
 
-              { }
               <div className="relative md:flex md:items-center md:justify-between">
                 <div className="md:w-5/12"></div>
 
@@ -219,9 +200,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-
-
+      <Statistics />
       <Testimonials />
     </main>
   )
