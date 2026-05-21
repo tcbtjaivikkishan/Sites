@@ -224,9 +224,25 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-200">
-            <p className="text-sm text-gray-600 flex items-center gap-2">
+            <p className="text-sm text-gray-600 text-center md:text-left">
               © 2026 TCBT Jaivik Kishan | Powered by Tarachand Belji Technique | All Rights Reserved
             </p>
+
+            <div className="flex items-center gap-6 text-sm">
+              <Link
+                href="/privacy-policy"
+                className="text-gray-600 hover:text-green-600 transition-colors font-medium"
+              >
+                Privacy Policy
+              </Link>
+
+              <Link
+                href="/contact"
+                className="text-gray-600 hover:text-green-600 transition-colors font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </div>
