@@ -5,7 +5,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ReduxProvider from "../store/ReduxProvider";
 import ChatbotWidget from "@/components/chatbot/ChatbotWidget";
-
+import Script from "next/script";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "@/lib/theme";
@@ -37,6 +37,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hi" className="scroll-smooth">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0SK9CH3GGR"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0SK9CH3GGR');
+          `}
+        </Script>
+      </head>
+
       <body className={`${inter.variable} ${devanagari.variable}`}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
