@@ -38,22 +38,31 @@ export default function RootLayout({
   return (
     <html lang="hi" className="scroll-smooth">
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-0SK9CH3GGR"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0SK9CH3GGR');
-          `}
-        </Script>
+        <Script id="gtm-head" strategy="afterInteractive">
+  {`
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+    w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PXP6TTXP');
+  `}
+</Script>
       </head>
 
       <body className={`${inter.variable} ${devanagari.variable}`}>
+        <noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-PXP6TTXP"
+    height="0"
+    width="0"
+    style={{ display: "none", visibility: "hidden" }}
+  />
+</noscript>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
